@@ -19,8 +19,8 @@
 
 @font-face {
   font-family: 'Helvetica-Neue-Medium';
-  src: url('../fonts/Helvetica\ Neue\ Medium/Helvetica-Neue-Medium.eot');
-  src: local('Helvetica Neue Medium'), url('../fonts/Helvetica\ Neue\ Medium/Helvetica-Neue-Medium.woff') format('woff'), url('../fonts/Helvetica\ Neue\ Medium/Helvetica-Neue-Medium.woff2') format('woff2');
+  src: url('../fonts/Helvetica-Neue-Medium/Helvetica\ Neue\ Medium.eot');
+  src: local('Helvetica Neue Medium'), url('../fonts/Helvetica-Neue-Medium/Helvetica\ Neue\ Medium.woff') format('woff'), url('../fonts/Helvetica-Neue-Medium/Helvetica\ Neue\ Medium.woff2') format('woff2');
 }
 
 @font-face {
@@ -44,12 +44,31 @@
 }
 
 .main-bg {
+  background-color: var(--eclipse);
+}
 
+.gotm-bold {
+  font-family: 'gotham-bold';
+}
+
+.gotm-rl {
+  font-family: 'gotham-rounded-light';
+}
+
+.helv-nl {
+  font-family: 'Helvetica-Neue-Light';
+}
+
+.helv-nm {
+  font-family: 'Helvetica-Neue-Medium';
+}
+
+.helv-nb {
+  font-family: 'Helvetica-Neue-Bold';
 }
 
 /* Header rules */
 
 .header {
   height: 50px;
-  background-color: var(--eclipse);
 }
