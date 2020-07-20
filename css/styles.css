@@ -43,8 +43,28 @@
   border: 2px dashed blue;
 }
 
+.border-2 {
+  border: 2px dashed red;
+}
+
 .main-bg {
   background-color: var(--eclipse);
+}
+
+.text-white {
+  color: white;
+}
+
+.text-cabret {
+  color: var(--cabaret);
+}
+
+.text-suvagray {
+  color: var(--suvagray);
+}
+
+.text-eclipse {
+  color: var(--eclipse);
 }
 
 .gotm-bold {
@@ -67,8 +87,68 @@
   font-family: 'Helvetica-Neue-Bold';
 }
 
+.w-25 {
+  width: 25%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.img-fit {
+  width: 100%;
+  height: 100%;
+}
+
+.img-logo {
+  width: 45px;
+  height: 45px;
+  margin: 0 0.6rem;
+}
+
+.fa {
+  margin: 0 1rem;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-r {
+  flex-direction: row;
+}
+
+.flex-c {
+  flex-direction: column;
+}
+
+.justify-c-center {
+  justify-content: center;
+}
+
+.justify-c-between {
+  justify-content: space-between;
+}
+
+.align-i-center {
+  align-items: center;
+}
+
 /* Header rules */
 
-.header {
-  height: 50px;
+.header__nav {
+  height: 55px;
 }
+
+.header__nav__container {
+  width: 90%;
+}
+
