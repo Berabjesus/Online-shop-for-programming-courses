@@ -1,0 +1,26 @@
+/* font face */
+
+/* color variables */
+
+:root {
+  --cabaret: #D35266;
+  --suvagray: #888888;
+  --eclipse: #383838;
+}
+
+/* Default classes */
+
+.border-1 {
+  border: 2px dashed blue;
+}
+
+.main-bg {
+
+}
+
+/* Header rules */
+
+.header {
+  height: 50px;
+  background-color: var(--eclipse);
+}
