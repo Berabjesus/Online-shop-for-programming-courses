@@ -47,8 +47,20 @@
   border: 2px dashed red;
 }
 
-.main-bg {
+.round {
+  border-radius: 50%;
+}
+
+.bg-eclipse {
   background-color: var(--eclipse);
+}
+
+.bg-suvagray {
+  background-color: var(--suvagray);
+}
+
+.bg-cabret {
+  background-color: var(--cabaret);
 }
 
 .text-white {
@@ -65,6 +77,10 @@
 
 .text-eclipse {
   color: var(--eclipse);
+}
+
+.text-center {
+  text-align: center;
 }
 
 .gotm-bold {
@@ -110,7 +126,6 @@
 .w-100 {
   width: 100%;
 }
-
 
 .fa {
   margin: 0 1rem 0 0;
@@ -174,10 +189,39 @@
 }
 
 .header__nav__container {
-  width: 90%;
+  width: 85%;
 }
 
-.header__logo {
-  /* margin-right: 80px; */
+.header__links_ul {
+  flex: 1 0 500px;
+}
+
+.header__buttons {
+  flex-shrink: 3;
+}
+
+.post-ad-btn {
+  padding: 0.5rem;
+  border-radius: 2px;
+}
+
+.header__user__msg {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: -4px;
+  right: 10px;
+  width: 12px;
+  height: 12px;
+  line-height: inherit;
+  font-size: 10px;
+}
+
+.header__user__avatar {
+  margin: 0 0 0 1rem;
+  width: 40px;
+  height: 40px;
 }
 
