@@ -39,6 +39,14 @@
 
 /* Default classes */
 
+.pos-rel {
+  position: relative;
+}
+
+.pos-abs {
+  position: absolute;
+}
+
 .border-1 {
   border: 2px dashed blue;
 }
@@ -182,6 +190,24 @@
   margin: 0 0.6rem;
 }
 
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) { 
+
+}
+
+@media (max-width: 992px) {
+  
+}
+
+@media screen and (max-width: 1199px) {
+  .d-md-none {
+    display: none;
+  }
+}
+
 /* Header rules */
 
 .header__nav {
@@ -193,29 +219,33 @@
 }
 
 .header__links_ul {
-  flex: 1 0 500px;
+  flex: 1 0 510px;
 }
 
-.header__buttons {
-  flex-shrink: 3;
+.header__toggle span {
+  margin: 1px 0;
+  height: 5px;
+  width: 20px;
+  background-color: var(--suvagray);
 }
+
+/* #################### */
+
+
+/* #################### */
 
 .post-ad-btn {
   padding: 0.5rem;
+  font-size: 15px;
   border-radius: 2px;
 }
 
-.header__user__msg {
-  position: relative;
-}
-
 .badge {
-  position: absolute;
   top: -4px;
   right: 10px;
   width: 12px;
   height: 12px;
-  line-height: inherit;
+  line-height: 12px;
   font-size: 10px;
 }
 
@@ -225,3 +255,23 @@
   height: 40px;
 }
 
+@media screen and (max-width: 1200px) {
+  .header__links_ul {
+    flex: 1 0 460px;
+  }
+
+  .header_user-name {
+    display: none;
+  }
+  
+  .header__user__avatar {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header__user {
+    display: none;
+  }
+
+}
