@@ -4,7 +4,9 @@
 *::after {
   box-sizing: border-box;
 }
-html,body {
+
+html,
+body {
   width: 100%;
 }
 
@@ -26,7 +28,7 @@ figcaption {
   border: 0;
 }
 
-ol, 
+ol,
 ul {
   list-style: none;
 }

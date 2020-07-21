@@ -1,14 +1,14 @@
-/* font face with IE-9 support*/
+/* font face with IE-9 support */
 @font-face {
   font-family: 'gotham-bold';
   src: url('../fonts/gothambold/gothambold1.eot');
-	src: local('gotham-bold'), url('../fonts/gothambold/gothambold1.woff') format('woff');
+  src: local('gotham-bold'), url('../fonts/gothambold/gothambold1.woff') format('woff');
 }
 
 @font-face {
   font-family: 'gotham-rounded-light';
   src: url('../fonts/Gotham-Rounded-Light/Gotham\ Rounded\ Light.eot');
-	src: local('gotham-rounded-light'), url('../fonts/Gotham-Rounded-Light/Gotham\ Rounded\ Light.woff') format('woff'), url('../fonts/Gotham-Rounded-Light/Gotham\ Rounded\ Light.woff2') format('woff2');
+  src: local('gotham-rounded-light'), url('../fonts/Gotham-Rounded-Light/Gotham\ Rounded\ Light.woff') format('woff'), url('../fonts/Gotham-Rounded-Light/Gotham\ Rounded\ Light.woff2') format('woff2');
 }
 
 @font-face {
@@ -32,8 +32,8 @@
 /* color variables */
 
 :root {
-  --cabaret: #D35266;
-  --suvagray: #888888;
+  --cabaret: #d35266;
+  --suvagray: #888;
   --eclipse: #383838;
 }
 
@@ -184,22 +184,6 @@
   height: 100%;
 }
 
-
-@media (min-width: 576px) {
-
-}
-
-@media (min-width: 768px) { 
-
-}
-
-@media (max-width: 992px) {
-  
-}
-
-@media screen and (max-width: 1199px) {
-}
-
 /* Header rules */
 
 .header__nav {
@@ -278,14 +262,14 @@
     top: 46px;
     right: -7.8vw;
     background-color: var(--eclipse);
-    transform: scale(1,0);
+    transform: scale(1, 0);
     transform-origin: top;
     transition: transform 0.2s ease-in-out;
   }
 
   #toggle:checked ~ .header__buttons__container > .header__user {
     display: flex;
-    transform: scale(1,1);
+    transform: scale(1, 1);
   }
 }
 
@@ -324,13 +308,13 @@
     top: 30px;
     right: -7.8vw;
     background-color: var(--eclipse);
-    transform: scale(1,0);
+    transform: scale(1, 0);
     transform-origin: top;
     transition: transform 0.2s ease-in-out;
   }
 
   #toggle:checked ~ .header__buttons__container {
-    transform: scale(1,1);
+    transform: scale(1, 1);
   }
 
   .header__user {
@@ -339,7 +323,7 @@
     padding: 10px 0 0 0;
     white-space: nowrap;
     border-top: 1px solid var(--suvagray);
-    transform: scale(1,1);
+    transform: scale(1, 1);
   }
 
   .post-ad-btn {
