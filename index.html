@@ -40,7 +40,7 @@
             </label>
             <input type="checkbox" name="toggle" id="toggle">
             <div class="header__buttons__container w-100 d-flex justify-c-between align-i-center">
-              <a href="" class="post-ad-btn bg-cabret text-white helv-nm">POST AN AD</a>
+              <a href="" class="post-ad-btn btn-custom bg-cabret text-white helv-nm">POST AN AD</a>
               <div class="header__user d-flex align-i-center">
                 <div class="header__user__msg pos-rel d-flex">
                   <a href="#">
@@ -74,23 +74,27 @@
             <option value="3">Game Development Courses</option>
             <option value="4">Database Design Courses</option>
           </select>
-          <input class="form__inputs helv-nl text-cabret w-30" type="text" name="search" id="search" placeholder="What are you looking for?">
-          <input class="form__inputs helv-nl text-cabret" type="text" name="search" id="search" placeholder="Choose a Programming Language">
+          <input class="form__inputs helv-nl text-cabret w-30" type="text" name="search" id="search"
+            placeholder="What are you looking for?">
+          <input class="form__inputs helv-nl text-cabret" type="text" name="search" id="search"
+            placeholder="Choose a Programming Language">
           <button class="form__button bg-eclipse text-suvagray helv-nm" type="submit">Search</button>
 
         </form>
       </div>
     </section>
   </header>
-    <!-- </ Header section >-->
+  <!-- </ Header section >-->
 
-    <!-- < main section >-->
+  <!-- < main section >-->
   <main class="main-container border-1">
     <section class="main-adv bg-main-1 w-100 border-2">
-      <div class="main-adv__container d-flex mx-auto">
-        <span class="main-ad__left-arrow"></span>
-        <div class="main-ad__img-container pos-rel border-1">
-          <h2>HOT ADS</h2>
+      <div class="main-adv__container d-flex justify-c-between mx-auto">
+        <a class="main-adv__left-arrow d-flex flex-c justify-c-center align-i-center">
+          <i class="chavron-ad round fa fa-1x fa-chevron-left text-suvagray"></i>
+        </a>
+        <div class="main-adv__img-container pos-rel border-1">
+          <h3 class="main-adv__title helv-nl text-suvagray">HOT ADS</h3>
           <div class="pos-rel w-100">
             <img class="adv-img img-border" src="./images/main/flutter.png" alt="ad-picture">
             <div class="img-toggle pos-abs d-flex justify-c-between bg-eclipse text-center">
@@ -100,26 +104,43 @@
               <a href="#">
                 <i class="fa fa-chevron-right text-cabret"></i>
               </a>
-            </div>  
+            </div>
           </div>
         </div>
-        <article class="main-ad__article">
-  
+        <article class="main-adv__article d-flex flex-c justify-c-between border-2">
+          <div>
+            <h2 class="helv-nl text-cabret">Flutter Course - Full Tutorial for Beginners</h2>
+            <h4 class="helv-nl text-suvagray">Learn Flutter, Google’s groundbreaking multi-platform mobile development
+              framework, to create apps for Android and iOS.In this crash course we will look at Flutter for building
+              native mobile apps.</h4>
+          </div>
+          <div>
+            <h4 class="helv-nl text-suvagray">By: Instructor</h4>
+            <h4 class="helv-nl text-suvagray">Starting day: June 26, 2020</h4>
+          </div>
+          <div class="main-adv__btns d-flex">
+            <button class="btn-custom bg-cabret helv-nm text-white">450$</button>
+            <button class="btn-custom bg-cabret helv-nm text-white">
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i>Purchase Details</button>
+          </div>
         </article>
-        <span class="main-ad__right-arrow"></span>  
+        <a class="main-adv__right-arrow d-flex flex-c justify-c-center align-i-center">
+          <i class="chavron-ad round fa fa-1x fa-chevron-right text-suvagray"></i>
+        </a>
       </div>
     </section>
+
     <section></section>
     <section></section>
     <section></section>
   </main>
   <footer></footer>
 
-<script>
-  window.onresize = function() {
-    document.getElementById("toggle").checked = false;
-};
-</script>
+  <script>
+    window.onresize = function () {
+      document.getElementById("toggle").checked = false;
+    };
+  </script>
 </body>
 
 </html>
