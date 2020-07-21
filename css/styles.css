@@ -184,11 +184,6 @@
   height: 100%;
 }
 
-.img-logo {
-  width: 40px;
-  height: 40px;
-  margin: 0 0.6rem;
-}
 
 @media (min-width: 576px) {
 
@@ -203,9 +198,6 @@
 }
 
 @media screen and (max-width: 1199px) {
-  .d-md-none {
-    display: none;
-  }
 }
 
 /* Header rules */
@@ -218,21 +210,37 @@
   width: 85%;
 }
 
+.img-logo {
+  width: 35px;
+  height: 35px;
+  margin: 0 0.6rem;
+}
+
+.header__brand {
+  font-size: 20px;
+}
+
 .header__links_ul {
-  flex: 1 0 510px;
+  flex: 0 0 510px;
+}
+
+.header__toggle {
+  display: none;
+  padding: 0.4rem 0.3rem 0.3rem 0.3rem;
+  right: -6vw;
+  border: var(--suvagray) 1px solid;
+  border-radius: 0.3em;
 }
 
 .header__toggle span {
-  margin: 1px 0;
-  height: 5px;
+  margin: 0 0 2.5px 0;
+  height: 3px;
   width: 20px;
-  background-color: var(--suvagray);
 }
 
-/* #################### */
-
-
-/* #################### */
+#toggle {
+  display: none;
+}
 
 .post-ad-btn {
   padding: 0.5rem;
@@ -257,21 +265,86 @@
 
 @media screen and (max-width: 1200px) {
   .header__links_ul {
-    flex: 1 0 460px;
+    flex: 0 0 55%;
   }
 
-  .header_user-name {
-    display: none;
+  .header__toggle {
+    display: flex;
   }
-  
-  .header__user__avatar {
-    margin: 0;
+
+  .header__user {
+    position: absolute;
+    padding: 0.5rem 1rem;
+    top: 46px;
+    right: -7.8vw;
+    background-color: var(--eclipse);
+    transform: scale(1,0);
+    transform-origin: top;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  #toggle:checked ~ .header__buttons__container > .header__user {
+    display: flex;
+    transform: scale(1,1);
   }
 }
 
 @media screen and (max-width: 992px) {
-  .header__user {
-    display: none;
+  .header__links_ul .fa {
+    margin: 0 0.5rem 0 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__nav {
+    justify-content: flex-start;
   }
 
+  .header__nav__container {
+    width: 90%;
+  }
+
+  .header__links_ul {
+    flex: 0 1 100%;
+  }
+
+  .header__buttons {
+    width: 0;
+  }
+
+  .header__toggle {
+    right: -9vw;
+  }
+
+  .header__buttons__container {
+    position: absolute;
+    flex-direction: column;
+    width: auto;
+    padding: 0.3rem 0.3rem;
+    top: 30px;
+    right: -7.8vw;
+    background-color: var(--eclipse);
+    transform: scale(1,0);
+    transform-origin: top;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  #toggle:checked ~ .header__buttons__container {
+    transform: scale(1,1);
+  }
+
+  .header__user {
+    position: static;
+    width: auto;
+    padding: 10px 0 0 0;
+    white-space: nowrap;
+    border-top: 1px solid var(--suvagray);
+    transform: scale(1,1);
+  }
+
+  .post-ad-btn {
+    width: 100%;
+    text-align: center;
+    margin: 0 0 10px 0;
+  }
 }

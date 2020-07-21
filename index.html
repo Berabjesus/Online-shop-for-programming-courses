@@ -1,13 +1,15 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/styles.css">
-    <title>CodeCart</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>CodeCart</title>
 </head>
+
 <body>
   <!-- < Header section >-->
   <header class="header">
@@ -15,7 +17,7 @@
       <div class="header__nav__container d-flex justify-c-start border-2">
         <div class="header__logo d-flex align-i-center border-1">
           <img class="img-logo" src="./images/header/logo.png" alt="">
-          <h2 class="gotm-rl text-white">CodeCart</h2>
+          <h2 class="header__brand gotm-rl text-white">CodeCart</h2>
         </div>
         <ul class="header__links_ul d-flex border-1 w-40 align-i-center justify-c-evenly">
           <li>
@@ -25,34 +27,36 @@
             <a class="helv-nl text-suvagray" href="#"><i class="fa fa-th-list" aria-hidden="true"></i>Catagory</a>
           </li>
           <li>
-            <a class="helv-nl text-suvagray" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i>PURCHASE LIST</a>
+            <a class="helv-nl text-suvagray" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i>PURCHASE
+              LIST</a>
           </li>
         </ul>
         <div class="header__buttons d-flex align-i-center w-60 border-1">
-          <ul class="d-flex justify-c-between align-i-center w-100">
-            <li>
+          <div class="pos-rel d-flex justify-c-between align-i-center w-100">
+            <label for="toggle" class="header__toggle pos-abs d-flex flex-c">
+              <span class="bg-suvagray"></span>
+              <span class="bg-suvagray"></span>
+              <span class="bg-suvagray"></span>
+            </label>
+            <input type="checkbox" name="toggle" id="toggle">
+            <div class="header__buttons__container w-100 d-flex justify-c-between align-i-center">
               <a href="" class="post-ad-btn bg-cabret text-white helv-nm">POST AN AD</a>
-            </li>
-            <li>
-              <ul class="header__user d-flex align-i-center">
-                <li class="header__user__msg pos-rel d-flex"><a href="#">
-                  <i class="fa fa-envelope text-suvagray"></i>
-                  <p class="badge pos-abs bg-cabret text-white helv-nb round text-center">2</p>
-                </a>
-                </li>
-                <li>
-                  <a href="#">               
-                    <p class="header_user-name helv-nb text-white">Mr. somebody</p>
-                  </a>
-                </li>
-                <li>
+              <div class="header__user d-flex align-i-center">
+                <div class="header__user__msg pos-rel d-flex">
                   <a href="#">
-                    <img class="header__user__avatar round bg-cabret" src="./images/header/user.png" alt="user image">
+                    <i class="fa fa-envelope text-suvagray"></i>
+                    <p class="badge pos-abs bg-cabret text-white helv-nb round text-center">2</p>
                   </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
+                </div>
+                <a href="#">
+                  <p class="header_user-name helv-nb text-white">Mr. somebody</p>
+                </a>
+                <a href="#">
+                  <img class="header__user__avatar round bg-cabret" src="./images/header/user.png" alt="user image">
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
@@ -65,5 +69,11 @@
   </main>
   <footer></footer>
 
+<script>
+  window.onresize = function() {
+    document.getElementById("toggle").checked = false;
+};
+</script>
 </body>
+
 </html>
