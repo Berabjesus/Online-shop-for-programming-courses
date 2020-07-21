@@ -131,10 +131,6 @@
   width: 75%;
 }
 
-.w-80 {
-  width: 80%;
-}
-
 .w-100 {
   width: 100%;
 }
@@ -262,11 +258,13 @@
 
 /* < header content > */
 .header__content {
-  height: 400px;
+  height: auto;
+  padding: 3rem 0;
 }
 
 .header__content__container {
   z-index: 100;
+  width: 80%;
 }
 
 .header__content__container::before {
@@ -278,7 +276,43 @@
   height: 100%;
   width: 100%;
   opacity: 0.2;
-  background:url(../images/header/logo1.png) no-repeat left /contain;
+  background:url(../images/header/logo1.png) no-repeat left / 20%;
+}
+
+.header__content__text {
+  margin-bottom: 5rem;
+}
+
+.header__content__text h1 {
+  font-size: 50px;
+  padding: 0.5rem 0;
+}
+
+.header__content_form {
+  width: 70%;
+}
+
+.form__selector {
+  position: relative;
+  text-align-last: center;
+  padding: 0 0 0 2rem;
+  height: 50px;
+  width: 22%;
+  font-size: 18px;
+  background: url("https://img.icons8.com/android/24/000000/sort-down.png") no-repeat 0.5rem / 22px, linear-gradient(to left, white, white);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form__inputs {
+  font-size: 18px;
+  width: 32%;
+}
+
+.form__button {
+  width: 13%;
+  margin: 0 0 0 auto;
 }
 
 /* </ header content > */

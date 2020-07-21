@@ -61,19 +61,23 @@
       </div>
     </nav>
     <section class="header__content w-100 bg-cabret">
-      <div class="header__content__container pos-rel border-1 w-80 h-100 mx-auto d-flex flex-c">
-        <div class="header__content_text">
-          <h1 class="gotm-bold text-white">CodeCart</h1>
+      <div class="header__content__container pos-rel border-1 h-100 mx-auto d-flex flex-c justify-c-center border-2">
+        <div class="header__content__text text-center border-1">
+          <h1 class="helv-nm text-white border-1">CodeCart</h1>
           <h3 class="text-white gotm-rl">Learning Programming Couldn't be simpler than this</h3>
         </div>
-        <form class="header__content_form" action="#">
-          <select name="select" id="select">
-            <option value="10">1</option>
-            <option value="10">1</option>
-            <option value="10">1</option>
-            <option value="10">1</option>
-            <option value="10">1</option>
+        <form class="header__content_form d-flex justify-c-start mx-auto border-2" action="#" id="courseForm">
+          <select class="form__selector w-20 helv-nl text-cabret" name="select" id="select" form="courseForm">
+            <option value="0">All Courses</option>
+            <option value="1">Web Development Courses</option>
+            <option value="2">Mobile App Development Courses</option>
+            <option value="3">Game Development Courses</option>
+            <option value="4">Database Design Courses</option>
           </select>
+          <input class="form__inputs helv-nl text-cabret w-30" type="text" name="search" id="search" placeholder="What are you looking for?">
+          <input class="form__inputs helv-nl text-cabret" type="text" name="search" id="search" placeholder="Choose a Programming Language">
+          <button class="form__button bg-eclipse text-suvagray helv-nm" type="submit">Search</button>
+
         </form>
       </div>
     </section>
