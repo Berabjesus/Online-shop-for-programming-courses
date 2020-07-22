@@ -36,7 +36,7 @@
   --suvagray: #888;
   --eclipse: #383838;
   --bg-main-1: #fff;
-  --bg-rows: #eed9d9;
+  --bg-rows: #f6f6f6;
 }
 
 /* Default classes */
@@ -582,6 +582,10 @@
     width: 90%;
   }
 
+  .main-adv__title {
+    margin: 0 0 0 11vw;
+  }
+
   .main-adv__left-arrow,
   .main-adv__right-arrow {
     width: 7%;
@@ -618,7 +622,7 @@
   }
 
   .main-adv__title {
-    margin: 0 0 0 2vw;
+    margin: 0 0 0 7vw;
   }
 
   .main-adv__left-arrow,
@@ -787,8 +791,7 @@
   .row-title {
     justify-content: left;
     flex-wrap: wrap;
-    font-size: smaller;
-    margin: 0 0 0 0.3rem;
+    margin: 0.5rem 0 1rem 0.3rem;
   }
 
   .row-title h4 {
