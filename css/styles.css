@@ -841,6 +841,11 @@
 /* </ main section> */
 
 /* < footer> */
+.footer {
+  margin: 0 0 2rem 0;
+  border-top: 2px solid var(--suvagray);
+  border-bottom: 2px solid var(--suvagray);
+}
 
 .footer-container {
   width: 80%;
@@ -891,4 +896,8 @@
   height: 30px;
 }
 
+.footer-footer {
+  border-top: 2px solid lightblue;
+  padding: 1rem 0;
+}
 
