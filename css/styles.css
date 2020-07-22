@@ -301,7 +301,7 @@
   height: 100%;
   width: 100%;
   opacity: 0.2;
-  background:url(../images/header/logo1.png) no-repeat left center / 300px;
+  background:url(../images/header/logo1.png) no-repeat left top / 200px;
 }
 
 .header__content__text {
