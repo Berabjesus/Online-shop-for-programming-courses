@@ -14,7 +14,7 @@
   <!-- < Header section >-->
   <header class="header">
     <nav class="header__nav bg-eclipse d-flex justify-c-center w-100 border-1">
-      <div class="header__nav__container d-flex justify-c-start border-2">
+      <div class="header__nav__container pos-rel d-flex justify-c-start border-2">
         <div class="header__logo d-flex align-i-center border-1">
           <img class="img-logo" src="./images/header/logo.png" alt="">
           <h2 class="header__brand gotm-rl text-white">CodeCart</h2>
@@ -66,7 +66,7 @@
           <h1 class="helv-nl text-white border-1">CodeCart</h1>
           <h3 class="text-white gotm-rl">Learning Programming Couldn't be simpler than this</h3>
         </div>
-        <form class="header__content_form d-flex justify-c-start mx-auto border-2" action="#" id="courseForm">
+        <form class="header__content__form d-flex justify-c-start mx-auto border-1" action="#" id="courseForm">
           <select class="form__selector helv-nl text-cabret" name="select" id="select" form="courseForm">
             <option value="0">All Courses</option>
             <option value="1">Web Development Courses</option>
@@ -77,7 +77,7 @@
           <input class="form__inputs helv-nl text-cabret w-30" type="text" name="search" id="search"
             placeholder="What are you looking for?">
           <input class="form__inputs helv-nl text-cabret" type="text" name="search" id="search"
-            placeholder="Choose a Programming Language">
+            placeholder="Search for an Instructor">
           <button class="form__button bg-eclipse text-suvagray helv-nm" type="submit">Search</button>
 
         </form>
@@ -89,14 +89,14 @@
   <!-- < main section >-->
   <main class="main-container border-1">
     <section class="main-adv bg-main-1 w-100 border-2">
-      <div class="main-adv__container d-flex justify-c-between mx-auto">
-        <a class="main-adv__left-arrow d-flex flex-c justify-c-center align-i-center">
+       <h3 class="main-adv__title helv-nl text-suvagray">HOT ADS</h3>
+      <div class="main-adv__container d-flex justify-c-between mx-auto border-1">
+        <a href="#" class="main-adv__left-arrow d-flex flex-c justify-c-center align-i-center">
           <i class="chavron-ad round fa fa-1x fa-chevron-left text-suvagray"></i>
         </a>
-        <div class="main-adv__img-container pos-rel border-1">
-          <h3 class="main-adv__title helv-nl text-suvagray">HOT ADS</h3>
+        <div class="main-adv__img-container align-s-start pos-rel border-1">
           <div class="pos-rel w-100">
-            <img class="adv-img img-border" src="./images/main/flutter.png" alt="ad-picture">
+            <img class="adv-img img-border border-1" src="./images/main/flutter2.png" alt="ad-picture">
             <div class="img-toggle pos-abs d-flex justify-c-between bg-eclipse text-center">
               <a href="#">
                 <i class="fa fa-chevron-left text-cabret"></i>
@@ -107,14 +107,14 @@
             </div>
           </div>
         </div>
-        <article class="main-adv__article d-flex flex-c justify-c-between border-2">
+        <article class="main-adv__article d-flex flex-c justify-c-start border-2">
           <div>
             <h2 class="helv-nl text-cabret">Flutter Course - Full Tutorial for Beginners</h2>
             <h4 class="helv-nl text-suvagray">Learn Flutter, Google’s groundbreaking multi-platform mobile development
               framework, to create apps for Android and iOS.In this crash course we will look at Flutter for building
               native mobile apps.</h4>
           </div>
-          <div>
+          <div class="article-cred">
             <h4 class="helv-nl text-suvagray">By: Instructor</h4>
             <h4 class="helv-nl text-suvagray">Starting day: June 26, 2020</h4>
           </div>
@@ -124,7 +124,7 @@
               <i class="fa fa-shopping-cart" aria-hidden="true"></i>Purchase Details</button>
           </div>
         </article>
-        <a class="main-adv__right-arrow d-flex flex-c justify-c-center align-i-center">
+        <a href="#" class="main-adv__right-arrow d-flex flex-c justify-c-center align-i-center">
           <i class="chavron-ad round fa fa-1x fa-chevron-right text-suvagray"></i>
         </a>
       </div>
