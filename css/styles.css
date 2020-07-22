@@ -561,6 +561,12 @@
   border-right: 1px solid black;
 }
 
+.main-adv__btns .fa {
+  margin: 0 0.8rem 0 0;
+}
+
+
+
 @media screen and (max-width: 1200px) {
   .main-adv__container {
     width: 100%;
@@ -657,6 +663,12 @@
 .main-row {
   width: 1180px;
   margin: 0 0 2rem 0;
+}
+
+.row-title {
+  margin: 0 0 1rem 0;
+  padding:  0 0 1rem 0;
+  border-bottom: 1px solid var(--suvagray);
 }
 
 .row-title * {
@@ -771,6 +783,7 @@
   .d-sm-flex {
     display: flex;
   }
+
   .row-title {
     justify-content: left;
     flex-wrap: wrap;
