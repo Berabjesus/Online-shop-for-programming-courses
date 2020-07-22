@@ -843,15 +843,15 @@
 /* < footer> */
 
 .footer-container {
-  width: 90%;
+  width: 80%;
   padding: 2rem 0 0 0;
 }
 
 .footer-main__brand {
-  width: 30%;
+  width: 25%;
   padding: 0 1rem 2rem 0;
   text-align: justify;
-  text-justify: newspaper;
+  text-justify: auto;
 }
 
 .footer-main__brand .img-logo {
@@ -870,7 +870,7 @@
 
 .footer-main__cat,
 .footer-main__nav {
-  width: 25%;
+  width: 20%;
 }
 
 .footer-main__btns {
