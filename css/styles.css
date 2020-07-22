@@ -189,6 +189,10 @@
   align-items: center;
 }
 
+.align-i-end {
+  align-items: end;
+}
+
 .align-s-start {
   align-self: flex-start;
 }
@@ -352,7 +356,7 @@
     z-index: 200;
     padding: 0.5rem 1rem;
     top: 46px;
-    right: -7.8vw;
+    right: -7.2vw;
     background-color: var(--eclipse);
     transform: scale(1, 0);
     transform-origin: top;
@@ -403,7 +407,7 @@
     width: auto;
     padding: 0.3rem 0.3rem;
     top: 30px;
-    right: -7.8vw;
+    right: -9vw;
     background-color: var(--eclipse);
     transform: scale(1, 0);
     transform-origin: top;
@@ -438,13 +442,13 @@
 @media screen and (max-width: 570px) {
   .header__links_ul {
     position: absolute;
-    top: 50px;
-    left: -5px;
-    width: 100vw;
+    top: 55px;
+    width: 111%;
     height: auto;
     justify-content: space-between;
     padding: 0 0.6rem;
     background-color: var(--eclipse);
+    border-top: 1px solid var(--suvagray);
   }
 
   .header__buttons {
@@ -518,8 +522,8 @@
 }
 
 .img-toggle {
-  bottom: 0;
-  right: 0;
+  bottom: 2px;
+  right: 1px;
   width: 90px;
 }
 
@@ -530,7 +534,7 @@
 
 .main-adv__article {
   width: 50%;
-  /* padding: 3rem 0 0 0; */
+  padding: 0 0 0 1rem;
 }
 
 .article-cred {
@@ -559,19 +563,11 @@
 @media screen and (max-width: 992px) {
   .main-adv__left-arrow, 
   .main-adv__right-arrow {
-    width: 2%;
+    width: 7%;
   }
 
-  .main-adv__title {
-    margin: 0 0 0 4vw;
-  }
-
-  .main-adv__left-arrow {
-    margin: 0 0 0 10px;
-  }
-
-  .main-adv__right-arrow {
-    margin: 0 10px 0 0;
+  .article-cred {
+    margin: 0.4rem 0;
   }
 
   .chavron-ad {
@@ -582,7 +578,12 @@
   }
   .main-adv__img-container {
     width: 40%;
-    align-self: flex-start;
+    align-self: flex-end;
+  }
+
+  .main-adv__article h2 {
+    font-size: 20px;
+    margin: 0 0 0.2rem 0;
   }
 }
 
@@ -591,33 +592,45 @@
     position: relative;
     flex-direction: column;
     align-items: center;
+    padding: 0 0 10px 0;
+  }
+
+  .main-adv__title {
+    margin: 0 0 0 2vw;
   }
 
   .main-adv__left-arrow, 
   .main-adv__right-arrow {
     position: absolute;
     bottom: -40px;
+    order: 1;
+    align-self: center;
   }
 
   .main-adv__left-arrow {
-    order: 1;
-    align-self: center;
     margin: 0 100px 0 0;
   } 
 
   .main-adv__right-arrow {
-    order: 1;
-    align-self: center;
     margin: 0 0 0 100px;
   }
 
   .main-adv__img-container {
-    width: 90%;
+    width: 95%;
     align-self: center;
   }
 
   .main-adv__article {
-    width: 90%;
+    width: 95%;
     align-self: center;
+    padding: 0;
+  }
+
+  .main-adv__btns {
+    align-self: center;
+  }
+
+  .article-cred {
+    margin: 1rem 0;
   }
 }
