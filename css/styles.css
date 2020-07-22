@@ -848,7 +848,9 @@
 
 .footer-main__brand {
   width: 30%;
-  padding: 0 0 2rem 0.5rem;
+  padding: 0 1rem 2rem 0;
+  text-align: justify;
+  text-justify: newspaper;
 }
 
 .footer-main__brand .img-logo {
@@ -858,4 +860,13 @@
 
 .footer-main__brand .header__brand {
   font-size: 30px;
+}
+
+.footer-main__cat {
+  width: 20%;
+  padding: 1rem 0 0 0;
+}
+
+.footer-main__cat > h2 {
+  padding: 0 0 1rem 0;
 }
