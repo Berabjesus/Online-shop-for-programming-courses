@@ -844,6 +844,7 @@
 
 .footer-container {
   width: 90%;
+  padding: 2rem 0 0 0;
 }
 
 .footer-main__brand {
@@ -862,11 +863,32 @@
   font-size: 30px;
 }
 
-.footer-main__cat {
-  width: 20%;
-  padding: 1rem 0 0 0;
-}
-
-.footer-main__cat > h2 {
+.footer-list-header {
+  border-bottom: 2px solid var(--suvagray);
   padding: 0 0 1rem 0;
 }
+
+.footer-main__cat,
+.footer-main__nav {
+  width: 25%;
+}
+
+.footer-main__btns {
+  width: 15%;
+  padding: 2.2rem 0 0 0;
+}
+
+.footer-main__btns > * {
+  margin: 0 0 1.5rem 0;
+}
+
+.footer-main__btns label {
+  margin: 0 1rem 0 0;
+}
+
+.footer-main__btns select {
+  width: 70%;
+  height: 30px;
+}
+
+
