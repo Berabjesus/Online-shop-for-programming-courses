@@ -91,7 +91,7 @@
     <div class="search-container d-flex flex-column flex-lg-row w-100">
       <button type="button" class="d-block d-sm-none bg-eclipse text-suvagray helv-nm w-50 mx-auto mt-2 py-2" data-toggle="collapse" data-target="#filter">Filter search</button>
 
-      <section id="filter" class="collapse search-filter col-12 col-lg-2 col-xl-3 pt-1 ptlg-4 pl-sm-0 pl-xl-5 border-right border-secondary d-sm-flex flex-column flex-lg-column flex-md-row justify-content-around justify-content-lg-start">
+      <aside id="filter" class="collapse search-filter col-12 col-lg-2 col-xl-3 pt-1 ptlg-4 pl-sm-0 pl-xl-5 border-right border-secondary d-sm-flex flex-column flex-lg-column flex-md-row justify-content-around justify-content-lg-start">
         <div class="form-check">
           <div class="form-check-inline">
             <label class="form-check-label helv-nm text-suvagray">
@@ -176,7 +176,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </aside>
 
       <section class="search-results col-lg-10 col-xl-9 pt-3 pl-0 pr-0 pr-md-2">
         <div>
@@ -334,6 +334,113 @@
         </div>
       </section>
   </main>
+
+  <div class="my-4">
+    <ul class="pagination d-flex justify-content-center">
+      <li class="page-item"><a class="page-link mx-2 border-secondary" href="#">Previous</a></li>
+      <li class="page-item"><a class="page-link mx-2 border-secondary" href="#">1</a></li>
+      <li class="page-item"><a class="page-link mx-2 border-secondary" href="#">2</a></li>
+      <li class="page-item"><a class="page-link mx-2 border-secondary" href="#">3</a></li>
+      <li class="page-item"><a class="page-link mx-2 border-secondary" href="#">Next</a></li>
+    </ul>
+  </div>
+
+  <footer class="footer w-100">
+    <div class="footer-container d-flex flex-c mx-auto ">
+      <div class="footer-main d-flex justify-c-between w-100">
+        <div class="footer-main__brand d-flex flex-c align-i-center ">
+          <div class="d-flex align-i-center align-s-center">
+            <img class="img-logo" src="./images/header/logo.png" alt="">
+            <h4 class="header__brand gotm-bold text-suvagray">CodeCart</h4>
+          </div>
+          <div class="helv-nm text-suvagray">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est similique
+            asperiores officiis a consequatur, temporibus eveniet doloremque sed mollitia porro laudantium
+            exercitationem aperiam laborum pariatur iure nisi facere cupiditate quis ipsam, molestiae libero modi.
+            Impedit necessitatibus voluptatem minima nisi facilis.</div>
+        </div>
+        <div class="footer-main__cat d-flex flex-c">
+          <h4 class="footer-list-header gotm-bold text-suvagray">Catagories</h4>
+          <div class="d-flex w-100 helv-nm text-suvagray">
+            <ul class="w-50">
+              <li><a href="#">Javascript</a></li>
+              <li><a href="#">Java</a></li>
+              <li><a href="#">HTML</a></li>
+              <li><a href="#">CSS</a></li>
+              <li><a href="#">Ruby</a></li>
+              <li><a href="#">PHP</a></li>
+              <li><a href="#">Python</a></li>
+              <li><a href="#">C++</a></li>
+            </ul>
+            <ul class="w-150">
+              <li><a href="#">react</a></li>
+              <li><a href="#">angular</a></li>
+              <li><a href="#">Vue</a></li>
+              <li><a href="#">Laravel</a></li>
+              <li><a href="#">Rails</a></li>
+              <li><a href="#">Django</a></li>
+              <li><a href="#">WebAssembly</a></li>
+              <li><a href="#">other</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-main__nav">
+          <h4 class="footer-list-header gotm-bold text-suvagray">Navigation</h4>
+          <ul class="w-100 helv-nm text-suvagray ">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">List</a></li>
+            <li><a href="#">Catagory</a></li>
+            <li><a href="#">Purchase</a></li>
+            <li><a href="#">User</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-main__btns d-flex flex-c ">
+          <div class="d-flex">
+            <label class="helv-nm text-suvagray" for="footer-drop-down-1">Country</label>
+            <select class="helv-nm text-suvagray" name="footer-drop-down-1" id="footer-drop-down-1">
+              <option value="1">Ethiopia</option>
+              <option value="2">Ertrea</option>
+              <option value="3">Kenya</option>
+              <option value="4">Nigeria</option>
+            </select>
+          </div>
+          <div class="d-flex">
+            <label class="helv-nm text-suvagray" for="footer-drop-down-1">Language</label>
+            <select class="helv-nm text-suvagray" name="footer-drop-down-2" id="footer-drop-down-2">
+              <option value="1">English</option>
+              <option value="2">Amharic</option>
+              <option value="3">other</option>
+            </select>
+          </div>
+          <div class="d-flex">
+            <label class="helv-nm text-suvagray" for="footer-drop-down-1">Currency</label>
+            <select class="helv-nm text-suvagray" name="footer-drop-down-2" id="footer-drop-down-2">
+              <option value="1">USD</option>
+              <option value="2">Birr</option>
+              <option value="3">Euro</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="footer-footer d-flex justify-c-between">
+        <div>
+          <h5 class="helv-nl text-suvagray">Copyright Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae ab
+            quis atque doloremque?</h5>
+        </div>
+        <div class="footer-icons d-flex text-suvagray  w-25">
+          <ul class="d-flex w-100 justify-c-between">
+            <li class="mr-4 mr-md-1"><a class="text-muted" href="#"><i class="fa fa-2x fa-facebook-square"></i></a></li>
+            <li class="mr-4 mr-md-1"><a class="text-muted" href="#"><i class="fa fa-2x fa-twitter"></i></a></li>
+            <li class="mr-4 mr-md-1"><a class="text-muted" href="#"><i class="fa fa-2x fa-instagram"></i></a></li>
+            <li class="mr-4 mr-md-1"><a class="text-muted" href="#"><i class="fa fa-2x fa-tumblr"></i></a></li>
+            <li class="mr-4 mr-md-1"><a class="text-muted" href="#"><i class="fa fa-2x fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
 

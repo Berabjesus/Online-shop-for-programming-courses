@@ -229,10 +229,6 @@
   height: 100%;
 }
 
-.img-shadow {
-  box-shadow: 1px 1px 10px rgb(238, 231, 231);
-}
-
 .img-border {
   border: 1px solid whitesmoke;
 }
@@ -299,6 +295,7 @@
 }
 
 /* < sub header content > */
+
 .header__content {
   height: auto;
   padding: 3rem 0;
