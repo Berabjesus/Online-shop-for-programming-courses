@@ -875,7 +875,7 @@
   padding: 2.2rem 0 0 0;
 }
 
-.footer-main__btns > * {
+.footer-main__btns > div {
   margin: 0 0 1.5rem 0;
 }
 
@@ -949,11 +949,12 @@
 
 /* < Search page > */
 
-.custom-checkbox[type="checkbox"]{
+.custom-checkbox[type="checkbox"] {
   width: 18px;
   height: 18px;
   margin: 0 1rem 0 0;
 }
+
 .custom-input {
   height: 20px;
   width: 40px;
@@ -963,10 +964,10 @@
   background-color: var(--bg-main-1);
 }
 
-#call-btn {
+.call-btn {
   display: none;
 }
 
-.search-hover:hover #call-btn {
+.search-hover:hover .call-btn {
   display: block;
 }
