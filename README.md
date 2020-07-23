@@ -11,7 +11,7 @@ This capstone project is a webpage that displays online programming course mater
 
 ## Small Size of Main page
 
-![screenshot](images/screen/sm.JPG)
+![screenshot](images/screen/sm.png)
 
 This project is the Final project of the HTML/CSS curriculum under Microverse. 
 
