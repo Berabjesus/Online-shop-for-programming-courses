@@ -926,6 +926,10 @@
     width: 100%;
   }
 
+  .footer-main__nav {
+    margin: 1rem 0 0 0;
+  }
+
   .footer-main__btns div {
     width: 200px;
     justify-content: space-between;
