@@ -34,7 +34,7 @@ ul {
 }
 
 a {
-  color: initial;
+  color: unset;
   text-decoration: none;
 }
 

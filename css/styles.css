@@ -233,7 +233,7 @@
   transition: all 0.1s linear;
 }
 
-.hover-custom a{
+.hover-custom:hover a{
   color: var(--suvagray);
 }
 
@@ -953,6 +953,7 @@
   }
 
   .footer-icons {
+    margin: 1rem 0 0 0;
     width: 50%;
   }
 }
