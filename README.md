@@ -1,7 +1,7 @@
 # Online Shop for programming Courses
 This capstone project is a webpage that displays online programming course materials that are available for free or for purchase.
 
-![screenshot](images/screen/xl.jpg)
+![screenshot](images/screen/main.png)
 
 This project is the Final project of the HTML/CSS curriculum under Microverse. 
 
@@ -13,7 +13,7 @@ This project is the Final project of the HTML/CSS curriculum under Microverse.
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/Berabjesus/Newsweek.com-clone/e2ed3671f314a0fb63476c3e456316dc2fb95380/index.html)
+[Live Demo Link](https://rawcdn.githack.com/Berabjesus/Online-shop-for-programming-courses/a398bdeecfc6e72139014eed9a7f9e6153b25b22/index.html)
 ## Authors
 
 👤 **Bereket Beshane**
