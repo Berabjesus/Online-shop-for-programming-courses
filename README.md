@@ -1,7 +1,7 @@
 # Online Shop for programming Courses
 This capstone project is a webpage that displays online programming course materials that are available for free or for purchase.
 
-![screenshot](./images/screen/xl/jpg)
+![screenshot](images/screen/xl.jpg)
 
 This project is the Final project of the HTML/CSS curriculum under Microverse. 
 
