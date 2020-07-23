@@ -34,13 +34,13 @@
         </ul>
         <div class="header__buttons d-flex align-i-center w-60 ">
           <div class="pos-rel d-flex justify-c-between align-i-center w-100">
-            <label for="toggle" class="header__toggle pos-abs d-flex flex-c">
+            <label for="toggle" class="header__toggle pos-abs d-xl-none  flex-c">
               <span class="bg-suvagray"></span>
               <span class="bg-suvagray"></span>
               <span class="bg-suvagray"></span>
             </label>
             <input class="d-none" type="checkbox" name="toggle" id="toggle">
-            <div class="header__buttons__container w-100 d-flex justify-c-between align-i-center">
+            <div class="header__buttons__container d-flex justify-c-between align-i-center">
               <a href="" class="post-ad-btn btn-custom bg-cabret text-white helv-nm">POST AN AD</a>
               <div class="header__user d-flex align-i-center">
                 <div class="header__user__msg pos-rel d-flex">
@@ -91,7 +91,7 @@
     <div class="search-container d-flex flex-column flex-lg-row w-100">
       <button type="button" class="d-block d-sm-none bg-eclipse text-suvagray helv-nm w-50 mx-auto mt-2 py-2" data-toggle="collapse" data-target="#filter">Filter search</button>
 
-      <section id="filter" class="collapse search-filter col-12 col-lg-2 col-xl-3 pt-1 ptlg-4 pl-sm-0 pl-xl-5 border-right border-secondary d-sm-flex flex-column flex-lg-column flex-md-row justify-content-around justify-content-lg-center">
+      <section id="filter" class="collapse search-filter col-12 col-lg-2 col-xl-3 pt-1 ptlg-4 pl-sm-0 pl-xl-5 border-right border-secondary d-sm-flex flex-column flex-lg-column flex-md-row justify-content-around justify-content-lg-start">
         <div class="form-check">
           <div class="form-check-inline">
             <label class="form-check-label helv-nm text-suvagray">
@@ -202,7 +202,132 @@
             <h6 class="helv-nm text-eclipse"><strong>Duration: </strong>Lorem ipsum dolor sit amet consectetur.</h6>
             <div class="d-flex justify-c-between flex-column flex-md-row">
               <p class="helv-nm text-eclipse">24 Nov 2020</p>
-              <button id="ww" class="post-ad-btn d-none btn-custom bg-cabret text-white helv-nm px-4 w-25">Give a Call</button>
+              <button id="call-btn" class="post-ad-btn  btn-custom bg-cabret text-white helv-nm px-4 w-25">Give a Call</button>
+              <button class="post-ad-btn btn-custom bg-cabret text-white helv-nm px-4 w-25">80$</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="search-items d-flex py-4 pl-2 w-100 border-bottom border-secondary flex-column flex-md-row align-items-center search-hover">
+          <div class="col-10 col-md-4 col-xl-3 px-0 pos-rel d-flexc">
+            <img class="w-100 h-100 align-self-start" src="./images/rows/row-2-5.png" alt="">
+            <div class="img-toggle pos-abs d-flex justify-c-between bg-eclipse text-center">
+              <a href="#">
+                <i class="fa fa-chevron-left text-cabret"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-chevron-right text-cabret"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-10 col-md-8 col-xl-9 d-flex flex-column justify-content-around pl-0 pl-md-3 pr-0 pr-md-3">
+            <h5 class="helv-nb text-eclipse">Javascript Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, maxime.</h5>
+            <p class="text-cabret helv-nm">20hours</p>
+            <p class="helv-nm text-suvagray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt obcaecati sint maiores delectus fugiat commodi doloribus voluptatibus ut, sequi doloremque.</p>
+            <h6 class="helv-nm text-eclipse"><strong>Duration: </strong>Lorem ipsum dolor sit amet consectetur.</h6>
+            <div class="d-flex justify-c-between flex-column flex-md-row">
+              <p class="helv-nm text-eclipse">24 Nov 2020</p>
+              <button id="call-btn" class="post-ad-btn  btn-custom bg-cabret text-white helv-nm px-4 w-25">Give a Call</button>
+              <button class="post-ad-btn btn-custom bg-cabret text-white helv-nm px-4 w-25">80$</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="search-items d-flex py-4 pl-2 w-100 border-bottom border-secondary flex-column flex-md-row align-items-center search-hover">
+          <div class="col-10 col-md-4 col-xl-3 px-0 pos-rel d-flexc">
+            <img class="w-100 h-100 align-self-start" src="./images/rows/row-2-1.png" alt="">
+            <div class="img-toggle pos-abs d-flex justify-c-between bg-eclipse text-center">
+              <a href="#">
+                <i class="fa fa-chevron-left text-cabret"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-chevron-right text-cabret"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-10 col-md-8 col-xl-9 d-flex flex-column justify-content-around pl-0 pl-md-3 pr-0 pr-md-3">
+            <h5 class="helv-nb text-eclipse">Javascript Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, maxime.</h5>
+            <p class="text-cabret helv-nm">20hours</p>
+            <p class="helv-nm text-suvagray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt obcaecati sint maiores delectus fugiat commodi doloribus voluptatibus ut, sequi doloremque.</p>
+            <h6 class="helv-nm text-eclipse"><strong>Duration: </strong>Lorem ipsum dolor sit amet consectetur.</h6>
+            <div class="d-flex justify-c-between flex-column flex-md-row">
+              <p class="helv-nm text-eclipse">24 Nov 2020</p>
+              <button id="call-btn" class="post-ad-btn  btn-custom bg-cabret text-white helv-nm px-4 w-25">Give a Call</button>
+              <button class="post-ad-btn btn-custom bg-cabret text-white helv-nm px-4 w-25">80$</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="search-items d-flex py-4 pl-2 w-100 border-bottom border-secondary flex-column flex-md-row align-items-center search-hover">
+          <div class="col-10 col-md-4 col-xl-3 px-0 pos-rel d-flexc">
+            <img class="w-100 h-100 align-self-start" src="./images/rows/row-1-4.png" alt="">
+            <div class="img-toggle pos-abs d-flex justify-c-between bg-eclipse text-center">
+              <a href="#">
+                <i class="fa fa-chevron-left text-cabret"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-chevron-right text-cabret"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-10 col-md-8 col-xl-9 d-flex flex-column justify-content-around pl-0 pl-md-3 pr-0 pr-md-3">
+            <h5 class="helv-nb text-eclipse">Javascript Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, maxime.</h5>
+            <p class="text-cabret helv-nm">20hours</p>
+            <p class="helv-nm text-suvagray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt obcaecati sint maiores delectus fugiat commodi doloribus voluptatibus ut, sequi doloremque.</p>
+            <h6 class="helv-nm text-eclipse"><strong>Duration: </strong>Lorem ipsum dolor sit amet consectetur.</h6>
+            <div class="d-flex justify-c-between flex-column flex-md-row">
+              <p class="helv-nm text-eclipse">24 Nov 2020</p>
+              <button id="call-btn" class="post-ad-btn  btn-custom bg-cabret text-white helv-nm px-4 w-25">Give a Call</button>
+              <button class="post-ad-btn btn-custom bg-cabret text-white helv-nm px-4 w-25">80$</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="search-items d-flex py-4 pl-2 w-100 border-bottom border-secondary flex-column flex-md-row align-items-center search-hover">
+          <div class="col-10 col-md-4 col-xl-3 px-0 pos-rel d-flexc">
+            <img class="w-100 h-100 align-self-start" src="./images/rows/row-1-5.png" alt="">
+            <div class="img-toggle pos-abs d-flex justify-c-between bg-eclipse text-center">
+              <a href="#">
+                <i class="fa fa-chevron-left text-cabret"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-chevron-right text-cabret"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-10 col-md-8 col-xl-9 d-flex flex-column justify-content-around pl-0 pl-md-3 pr-0 pr-md-3">
+            <h5 class="helv-nb text-eclipse">Javascript Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, maxime.</h5>
+            <p class="text-cabret helv-nm">20hours</p>
+            <p class="helv-nm text-suvagray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt obcaecati sint maiores delectus fugiat commodi doloribus voluptatibus ut, sequi doloremque.</p>
+            <h6 class="helv-nm text-eclipse"><strong>Duration: </strong>Lorem ipsum dolor sit amet consectetur.</h6>
+            <div class="d-flex justify-c-between flex-column flex-md-row">
+              <p class="helv-nm text-eclipse">24 Nov 2020</p>
+              <button id="call-btn" class="post-ad-btn btn-custom bg-cabret text-white helv-nm px-4 w-25">Give a Call</button>
+              <button class="post-ad-btn btn-custom bg-cabret text-white helv-nm px-4 w-25">80$</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="search-items d-flex py-4 pl-2 w-100 border-bottom border-secondary flex-column flex-md-row align-items-center search-hover">
+          <div class="col-10 col-md-4 col-xl-3 px-0 pos-rel d-flexc">
+            <img class="w-100 h-100 align-self-start" src="./images/rows/row-1-2.png" alt="">
+            <div class="img-toggle pos-abs d-flex justify-c-between bg-eclipse text-center">
+              <a href="#">
+                <i class="fa fa-chevron-left text-cabret"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-chevron-right text-cabret"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-10 col-md-8 col-xl-9 d-flex flex-column justify-content-around pl-0 pl-md-3 pr-0 pr-md-3">
+            <h5 class="helv-nb text-eclipse">Javascript Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, maxime.</h5>
+            <p class="text-cabret helv-nm">20hours</p>
+            <p class="helv-nm text-suvagray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt obcaecati sint maiores delectus fugiat commodi doloribus voluptatibus ut, sequi doloremque.</p>
+            <h6 class="helv-nm text-eclipse"><strong>Duration: </strong>Lorem ipsum dolor sit amet consectetur.</h6>
+            <div class="d-flex justify-c-between flex-column flex-md-row">
+              <p class="helv-nm text-eclipse">24 Nov 2020</p>
+              <button id="call-btn" class="post-ad-btn  btn-custom bg-cabret text-white helv-nm px-4 w-25">Give a Call</button>
               <button class="post-ad-btn btn-custom bg-cabret text-white helv-nm px-4 w-25">80$</button>
             </div>
           </div>
