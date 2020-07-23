@@ -487,6 +487,12 @@
   }
 }
 
+@media screen and (max-width: 320px) {
+  .header__links_ul {
+    display: none;
+  }
+}
+
 /* </ Header rules > */
 
 /* <Main Section> */
