@@ -7,25 +7,26 @@
 
 @font-face {
   font-family: 'gotham-rounded-light';
-  src: local('gotham-rounded-light'), url('../fonts/Gotham-Rounded-Light/Gotham\ Rounded\ Light.woff') format('woff'), url('../fonts/Gotham-Rounded-Light/Gotham\ Rounded\ Light.woff2') format('woff2');
+  src: url('../fonts/Gotham-Rounded-Light/GothamRoundedLight.eot');
+  src: local('gotham-rounded-light'), url('../fonts/Gotham-Rounded-Light/GothamRoundedLight.woff') format('woff'), url('../fonts/Gotham-Rounded-Light/GothamRoundedLight.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Helvetica-Neue-Light';
-  src: url('../fonts/Helvetica-Neue-Light/Helvetica\ Neue\ Light.eot');
-  src: local('Helvetica Neue Light'), url('../fonts/Helvetica-Neue-Light/Helvetica\ Neue\ Light.woff') format('woff'), url('../fonts/Helvetica-Neue-Light/Helvetica\ Neue\ Light.woff2') format('woff2');
+  src: url('../fonts/Helvetica-Neue-Light/HelveticaNeueLight.eot');
+  src: local('Helvetica Neue Light'), url('../fonts/Helvetica-Neue-Light/HelveticaNeueLight.woff') format('woff'), url('../fonts/Helvetica-Neue-Light/HelveticaNeueLight.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Helvetica-Neue-Medium';
-  src: url('../fonts/Helvetica-Neue-Medium/Helvetica\ Neue\ Medium.eot');
-  src: local('Helvetica Neue Medium'), url('../fonts/Helvetica-Neue-Medium/Helvetica\ Neue\ Medium.woff') format('woff'), url('../fonts/Helvetica-Neue-Medium/Helvetica\ Neue\ Medium.woff2') format('woff2');
+  src: url('../fonts/Helvetica-Neue-Medium/HelveticaNeueMedium.eot');
+  src: local('Helvetica Neue Medium'), url('../fonts/Helvetica-Neue-Medium/HelveticaNeueMedium.woff') format('woff'), url('../fonts/Helvetica-Neue-Medium/HelveticaNeueMedium.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Helvetica-Neue-Bold';
-  src: url('../fonts/Helvetica-Neue-Bold/Helvetica\ Neue\ Bold.eot');
-  src: local('Helvetica-Neue-Bold'), url('../fonts/Helvetica-Neue-Bold/Helvetica\ Neue\ Bold.woff') format('woff'), url('../fonts/Helvetica-Neue-Bold/Helvetica\ Neue\ Bold.woff2') format('woff2');
+  src: url('../fonts/Helvetica-Neue-Bold/HelveticaNeueBold.eot');
+  src: local('Helvetica-Neue-Bold'), url('../fonts/Helvetica-Neue-Bold/HelveticaNeueBold.woff') format('woff'), url('../fonts/Helvetica-Neue-Bold/HelveticaNeueBold.woff2') format('woff2');
 }
 
 /* color variables */
