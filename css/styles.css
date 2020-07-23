@@ -279,10 +279,6 @@
   font-size: 10px;
 }
 
-.header__buttons__container {
-  width: 100%;
-}
-
 .header__user__avatar {
   margin: 0 0 0 1rem;
   width: 40px;
@@ -490,10 +486,6 @@
 
 /* <Main Section> */
 
-.main-container {
-  width: 100%;
-}
-
 .main-adv {
   padding: 1.5rem 0;
   border-bottom: 2px solid var(--suvagray);
@@ -527,10 +519,6 @@
 .main-adv__img-container {
   width: 35%;
   height: auto;
-}
-
-.adv-img {
-  width: 100%;
 }
 
 .img-toggle {
@@ -702,12 +690,13 @@
   padding: 0 0.5rem 0 0.5rem;
 }
 
-.row-item__img {
-  width: 100%;
-}
-
 .row-item__text {
   padding: 0 0.6rem;
+}
+
+.row-item__text p {
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .row-item__text > * {
