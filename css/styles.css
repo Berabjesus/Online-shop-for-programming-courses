@@ -7,7 +7,6 @@
 
 @font-face {
   font-family: 'gotham-rounded-light';
-  src: url('../fonts/Gotham-Rounded-Light/Gotham\ Rounded\ Light.eot');
   src: local('gotham-rounded-light'), url('../fonts/Gotham-Rounded-Light/Gotham\ Rounded\ Light.woff') format('woff'), url('../fonts/Gotham-Rounded-Light/Gotham\ Rounded\ Light.woff2') format('woff2');
 }
 
