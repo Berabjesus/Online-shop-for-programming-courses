@@ -224,6 +224,19 @@
   border-radius: 2px;
 }
 
+.hover-custom:hover {
+  color: var(--suvagray);
+  padding: 0.2rem;
+  border: 1px solid var(--suvagray);
+  border-radius: 4px;
+  transform: scale(1.2);
+  transition: all 0.1s linear;
+}
+
+.hover-custom a{
+  color: var(--suvagray);
+}
+
 .img-border {
   border: 1px solid whitesmoke;
 }

@@ -34,7 +34,11 @@ ul {
 }
 
 a {
-  color: unset;
+  color: initial;
+  text-decoration: none;
+}
+
+a:hover {
   text-decoration: none;
 }
 
