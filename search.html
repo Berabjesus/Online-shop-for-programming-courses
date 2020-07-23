@@ -61,7 +61,8 @@
         </div>
       </div>
     </nav>
-    <section class="header__content w-100 bg-cabret pt-2 pb-3">
+
+    <section class="header__content w-100 bg-cabret pt-2 pb-3 mt-3 mt-sm-0">
       <div class="header__content__container pos-rel  h-100 mx-auto d-flex flex-column justify-content-start">
         <div class="header__content__text mb-2">
           <h1 class="helv-nl text-white py-0">CodeCart</h1>
@@ -87,8 +88,10 @@
   </header>
 
   <main class="contianer-fluid bg-rows">
-    <div class="search-container d-flex w-100">
-      <section class="search-filter col-3 pt-4 pl-md-5 border-right border-secondary ">
+    <div class="search-container d-flex flex-column flex-lg-row w-100">
+      <button type="button" class="d-block d-sm-none bg-eclipse text-suvagray helv-nm w-50 mx-auto mt-2 py-2" data-toggle="collapse" data-target="#filter">Filter search</button>
+
+      <section id="filter" class="collapse search-filter col-12 col-lg-2 col-xl-3 pt-1 ptlg-4 pl-sm-0 pl-xl-5 border-right border-secondary d-sm-flex flex-column flex-lg-column flex-md-row justify-content-around justify-content-lg-center">
         <div class="form-check">
           <div class="form-check-inline">
             <label class="form-check-label helv-nm text-suvagray">
@@ -101,11 +104,11 @@
             </label>
           </div>
         </div>
-        <div class="form-check mt-3">
+        <div class="form-check mt-0 mt-lg-3">
           <div class="border-bottom border-secondary pb-1">
             <h5 class="helv-nb text-eclipse">Type</h5>
           </div>
-          <div class="d-flex flex-column mt-2">
+          <div class="d-flex flex-column flex-sm-row flex-md-column mt-2">
             <div class="form-check-inline mb-1">
               <label class="form-check-label helv-nm text-suvagray">
                 <input type="checkbox" class="form-check-input 
@@ -125,22 +128,21 @@
           </div>
         </div>
 
-        <div class="form-check mt-3">
+        <div class="form-check mt-0 mt-lg-3-0 mt-lg-3">
           <div class="border-bottom border-secondary  pb-1">
             <h5 class="helv-nb text-eclipse">Hours</h5>
           </div>
-          <div class="d-flex flex-column mt-2">
+          <div class="d-flex flex-column flex-sm-row  flex-md-column mt-2">
             <div class="form-check-inline mb-1">
               <label class="form-check-label helv-nm text-suvagray">
                 <input type="checkbox" class="form-check-input 
-                custom-checkbox" value="1">
-                < 10 Hours </label> </div> <div class="form-check-inline mb-1">
+                custom-checkbox" value="1">< 10 Hours </label> </div> <div class="form-check-inline mb-1">
                   <label class="form-check-label helv-nm text-suvagray">
-                    <input type="checkbox" class="form-check-input custom-checkbox" value="1">10 - 20 Hours
+                    <input type="checkbox" class="form-check-input custom-checkbox" value="1">10 - 20 Hrs
                   </label>
             </div>
-            <div class="form-check-inline mb-1">
-              <label class="form-check-label helv-nm text-suvagray d-flex">
+            <div class="form-check-inline mb-1 d-flex flex-row flex-lg-column flex-xl-row align-self-start">
+              <label class="form-check-label helv-nm text-suvagray">
                 <input type="checkbox" class="form-check-input custom-checkbox" value="1">Custom
               </label>
               <input class="ml-3 custom-input" type="number" name="number" id="number">
@@ -148,11 +150,11 @@
           </div>
         </div>
 
-        <div class="form-check mt-3">
+        <div class="form-check mt-0 mt-lg-3">
           <div class="border-bottom border-secondary  pb-1">
             <h5 class="helv-nb text-eclipse">Price Range</h5>
           </div>
-          <div class="d-flex flex-column mt-2">
+          <div class="d-flex flex-column flex-sm-row  flex-md-column mt-2">
             <div class="form-check-inline mb-1">
               <label class="form-check-label helv-nm text-suvagray">
                 <input type="checkbox" class="form-check-input 
@@ -176,13 +178,13 @@
         </div>
       </section>
 
-      <section class="search-results col-9 pt-3">
+      <section class="search-results col-lg-10 col-xl-9 pt-3 pl-0 pr-0 pr-md-2">
         <div>
-          <h6 class="pb-3 border-bottom border-secondary">340 search results for <strong>All courses</strong> search by
+          <h6 class="pb-3 pl-2 border-bottom border-secondary">340 search results for <strong>All courses</strong> search by
             <strong>anyone</strong>.</h6>
         </div>
-        <div class="d-flex py-4 w-100 border-1">
-          <div class="col-3 px-0 pos-rel d-flex border-2">
+        <div class="search-items d-flex py-4 pl-2 w-100 border-bottom border-secondary flex-column flex-md-row align-items-center search-hover">
+          <div class="col-10 col-md-4 col-xl-3 px-0 pos-rel d-flexc">
             <img class="w-100 h-100 align-self-start" src="./images/rows/row-1-2.png" alt="">
             <div class="img-toggle pos-abs d-flex justify-c-between bg-eclipse text-center">
               <a href="#">
@@ -193,14 +195,15 @@
               </a>
             </div>
           </div>
-          <div class="col-9 border-1 d-flex flex-column justify-content-around">
+          <div class="col-10 col-md-8 col-xl-9 d-flex flex-column justify-content-around pl-0 pl-md-3 pr-0 pr-md-3">
             <h5 class="helv-nb text-eclipse">Javascript Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, maxime.</h5>
             <p class="text-cabret helv-nm">20hours</p>
             <p class="helv-nm text-suvagray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt obcaecati sint maiores delectus fugiat commodi doloribus voluptatibus ut, sequi doloremque.</p>
             <h6 class="helv-nm text-eclipse"><strong>Duration: </strong>Lorem ipsum dolor sit amet consectetur.</h6>
-            <div class="d-flex justify-c-between">
+            <div class="d-flex justify-c-between flex-column flex-md-row">
               <p class="helv-nm text-eclipse">24 Nov 2020</p>
-              <button class="post-ad-btn btn-custom bg-cabret text-white helv-nm px-4">80$</button>
+              <button id="ww" class="post-ad-btn d-none btn-custom bg-cabret text-white helv-nm px-4 w-25">Give a Call</button>
+              <button class="post-ad-btn btn-custom bg-cabret text-white helv-nm px-4 w-25">80$</button>
             </div>
           </div>
         </div>

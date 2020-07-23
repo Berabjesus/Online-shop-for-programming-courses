@@ -962,3 +962,11 @@
   height: 20px;
   width: 40px;
 }
+
+.search-hover:hover {
+  background-color: var(--bg-main-1);
+}
+
+.search-hover:hover #ww {
+  display: block !important;
+}
