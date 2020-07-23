@@ -237,7 +237,7 @@
   border: 1px solid whitesmoke;
 }
 
-/* < Header rules >*/
+/* < Header rules > */
 
 .header__nav {
   height: 55px;
@@ -376,7 +376,7 @@
     transition: transform 0.2s ease-in-out;
   }
 
-  #toggle:checked~.header__buttons__container>.header__user {
+  #toggle:checked ~ .header__buttons__container > .header__user {
     display: flex;
     transform: scale(1, 1);
   }
@@ -431,7 +431,7 @@
     transition: transform 0.2s ease-in-out;
   }
 
-  #toggle:checked~.header__buttons__container {
+  #toggle:checked ~ .header__buttons__container {
     transform: scale(1, 1);
   }
 
@@ -480,7 +480,7 @@
     flex-direction: column;
   }
 
-  .header__content__form>* {
+  .header__content__form > * {
     width: 90%;
     height: 35px;
     margin: 0.2rem auto;
@@ -489,10 +489,9 @@
   .form__button {
     width: 40%;
   }
-
 }
 
-/* </ Header rules >*/
+/* </ Header rules > */
 
 /* <Main Section> */
 
@@ -572,8 +571,6 @@
 .main-adv__btns .fa {
   margin: 0 0.8rem 0 0;
 }
-
-
 
 @media screen and (max-width: 1200px) {
   .main-adv__container {
@@ -718,7 +715,7 @@
   padding: 0 0.6rem;
 }
 
-.row-item__text>* {
+.row-item__text > * {
   margin: 0 0 0.5rem 0;
 }
 
@@ -762,7 +759,7 @@
   background-color: var(--eclipse);
 }
 
-.row-item_toggle:checked~.row-popup {
+.row-item_toggle:checked ~ .row-popup {
   display: flex;
 }
 
@@ -773,7 +770,7 @@
 }
 
 @media screen and (max-width: 992px) {
-  .row-item__text>* {
+  .row-item__text > * {
     margin: 0 0 0.2rem 0;
   }
 
@@ -785,7 +782,6 @@
   .row-popup-md-right::before {
     left: 10%;
   }
-
 }
 
 @media screen and (max-width: 768px) {
@@ -828,7 +824,6 @@
   .row-popup-right::before {
     left: 10%;
   }
-
 }
 
 @media screen and (max-width: 570px) {
@@ -884,7 +879,7 @@
   padding: 2.2rem 0 0 0;
 }
 
-.footer-main__btns>* {
+.footer-main__btns > * {
   margin: 0 0 1.5rem 0;
 }
 
@@ -918,11 +913,11 @@
     flex: 1 1 100%;
   }
 
-  .footer-main>* {
+  .footer-main > * {
     width: 23%;
   }
 
-  .footer-main__cat>div {
+  .footer-main__cat > div {
     flex-direction: column;
   }
 }
@@ -933,11 +928,11 @@
     align-items: center;
   }
 
-  .footer-main>* {
+  .footer-main > * {
     width: 97%;
   }
 
-  .footer-main__cat>div {
+  .footer-main__cat > div {
     flex-direction: row;
   }
 
@@ -952,5 +947,18 @@
   .footer-icons {
     width: 50%;
   }
+}
 
+/* </footer> */
+
+/* < Search page > */
+
+.custom-checkbox[type="checkbox"]{
+  width: 18px;
+  height: 18px;
+  margin: 0 1rem 0 0;
+}
+.custom-input {
+  height: 20px;
+  width: 40px;
 }
