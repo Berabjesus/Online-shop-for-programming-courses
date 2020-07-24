@@ -29,7 +29,7 @@ This project is the Final project of the HTML/CSS curriculum under Microverse.
 
 ## Live Demo
 
-[Check the project out at](https://rawcdn.githack.com/Berabjesus/Online-shop-for-programming-courses/f03f4861c4e96fd45e85eb2815bab024f310a211/index.html)
+[Check the project out here](https://rawcdn.githack.com/Berabjesus/Online-shop-for-programming-courses/adaae55d064fbb809e08c8bf9cd573222ccb4e59/index.html)
 
 ## Getting Started
 
@@ -41,7 +41,7 @@ This project is the Final project of the HTML/CSS curriculum under Microverse.
 
 3. Copy and paste the following code into the Terminal:
 
-git clone https://github.com/Berabjesus/Online-shop-for-programming-courses.git
+    git clone https://github.com/Berabjesus/Online-shop-for-programming-courses.git
 
 4. Hit enter.
 
