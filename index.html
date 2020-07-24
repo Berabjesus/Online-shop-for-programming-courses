@@ -1,0 +1,762 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>CodeCart</title>
+</head>
+
+<body>
+  <!-- < Header section >-->
+  <header class="header">
+    <nav class="header__nav bg-eclipse d-flex justify-c-center w-100 ">
+      <div class="header__nav__container pos-rel d-flex justify-c-start ">
+        <div class="header__logo d-flex align-i-center ">
+          <img class="img-logo" src="./images/header/logo.png" alt="">
+          <h2 class="header__brand gotm-rl text-white">CodeCart</h2>
+        </div>
+        <ul class="header__links_ul d-flex  w-40 align-i-center justify-c-evenly">
+          <li class="hover-custom">
+            <a class="helv-nl text-cabret" href="#"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+          </li>
+          <li class="hover-custom">
+            <a class="helv-nl text-suvagray" href="#"><i class="fa fa-th-list" aria-hidden="true"></i>Catagory</a>
+          </li>
+          <li class="hover-custom">
+            <a class="helv-nl text-suvagray" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Purchase
+              List</a>
+          </li>
+        </ul>
+        <div class="header__buttons d-flex align-i-center w-60 ">
+          <div class="pos-rel d-flex justify-c-between align-i-center w-100">
+            <label for="toggle" class="header__toggle pos-abs d-flex flex-c">
+              <span class="bg-suvagray"></span>
+              <span class="bg-suvagray"></span>
+              <span class="bg-suvagray"></span>
+            </label>
+            <input class="d-none" type="checkbox" name="toggle" id="toggle">
+            <div class="header__buttons__container w-100 d-flex justify-c-between align-i-center">
+              <a href="" class="post-ad-btn btn-custom bg-cabret text-white helv-nm">POST AN AD</a>
+              <div class="header__user d-flex align-i-center">
+                <div class="header__user__msg pos-rel d-flex">
+                  <a href="#">
+                    <i class="fa fa-envelope text-suvagray"></i>
+                    <p class="badge pos-abs bg-cabret text-white helv-nb round text-center">2</p>
+                  </a>
+                </div>
+                <a href="#">
+                  <p class="header_user-name helv-nb text-white">Mr. somebody</p>
+                </a>
+                <a href="#">
+                  <img class="header__user__avatar round bg-cabret" src="./images/header/user.png" alt="user image">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="header__content w-100 bg-cabret">
+      <div class="header__content__container pos-rel  h-100 mx-auto d-flex flex-c justify-c-center ">
+        <div class="header__content__text text-center ">
+          <h1 class="helv-nl text-white ">CodeCart</h1>
+          <h3 class="text-white gotm-rl">Learning Programming Couldn't be simpler than this</h3>
+        </div>
+        <form class="header__content__form d-flex justify-c-start mx-auto " action="./search.html" id="courseForm">
+          <select class="form__selector helv-nl text-cabret" name="select" id="select" form="courseForm">
+            <option value="0">All Courses</option>
+            <option value="1">Web Development Courses</option>
+            <option value="2">Mobile App Development Courses</option>
+            <option value="3">Game Development Courses</option>
+            <option value="4">Database Design Courses</option>
+          </select>
+          <input class="form__inputs helv-nl text-cabret" type="text" name="search" id="search"
+            placeholder="What are you looking for?">
+          <input class="form__inputs helv-nl text-cabret" type="text" name="search" id="search-1"
+            placeholder="Search for an Instructor">
+          <button class="form__button bg-eclipse text-suvagray helv-nm">Search</button>
+        </form>
+      </div>
+    </section>
+  </header>
+  <!-- </ Header section >-->
+
+  <!-- < main section >-->
+  <main class="main-container d-flex flex-c align-i-center w-100 bg-rows">
+    <section class="main-adv bg-main-1 w-100 ">
+      <h3 class="main-adv__title helv-nl text-suvagray">HOT ADS</h3>
+      <div class="main-adv__container d-flex justify-c-center mx-auto">
+        <a href="#" class="main-adv__left-arrow d-flex flex-c justify-c-center align-i-center mx-auto">
+          <i class="chavron-ad round fa fa-1x fa-chevron-left text-suvagray"></i>
+        </a>
+        <div class="main-adv__img-container align-s-start pos-rel">
+          <div class="pos-rel w-100 d-flex align-i-end">
+            <img class="adv-img img-border w-100" src="./images/main/flutter2.png" alt="ad-picture">
+            <div class="img-toggle pos-abs d-flex justify-c-between bg-eclipse text-center">
+              <a href="#">
+                <i class="fa fa-chevron-left text-cabret"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-chevron-right text-cabret"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <article class="main-adv__article d-flex flex-c justify-c-start ">
+          <div>
+            <h2 class="helv-nl text-cabret">Flutter Course - Full Tutorial for Beginners</h2>
+            <strong class="helv-nl text-suvagray">Learn Flutter, Google’s groundbreaking multi-platform mobile development
+              framework, to create apps for Android and iOS.In this crash course we will look at Flutter for building
+              native mobile apps.</strong>
+          </div>
+          <div class="article-cred">
+            <p class="helv-nl text-suvagray"><strong>By:</strong> Instructor</p>
+            <p class="helv-nl text-suvagray"><strong>Starting day: </strong> June 26, 2020</p>
+          </div>
+          <div class="main-adv__btns d-flex">
+            <button class="btn-custom bg-cabret helv-nm text-white">450$</button>
+            <button class="btn-custom bg-cabret helv-nm text-white">
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i>Purchase Details</button>
+          </div>
+        </article>
+        <a href="#" class="main-adv__right-arrow d-flex flex-c justify-c-center align-i-center mx-auto">
+          <i class="chavron-ad round fa fa-1x fa-chevron-right text-suvagray"></i>
+        </a>
+      </div>
+    </section>
+    <section class="main-row mx-auto">
+      <div class="row-title d-flex align-i-center ">
+        <i class="fa fa-2x fa-css3 text-suvagray" aria-hidden="true"></i>
+        <h3 class="text-eclipse helv-nl">Front End Web Development</h3>
+        <h4 class="text-suvagray gotm-rl">(HTML5, CSS3, Sass, Javascript, React, Vue)</h4>
+      </div>
+
+      <div class="row-item-container d-flex ">
+        <a href="#" class="row-chavron-left d-flex justify-c-start align-i-center">
+          <i class="fa fa-chevron-left text-eclipse"></i>
+        </a>
+        <div class="row-courses d-flex ">
+          <div class="row-item d-flex flex-c">
+            <img class="row-item__img w-100" src="./images/rows/row-1-1.png" alt="row 1 picture">
+            <div class="row-item__text bg-main-1">
+              <h4 class="text-eclipse helv-nl"> HTML5, CSS3</h4>
+              <p class="text-cabret helv-nb">15 Hours</p>
+              <p class="text-eclipse helv-nl"><strong>By:</strong> Instructor</p>
+              <div class="d-flex justify-c-between pos-rel">
+                <label class="row-item_toggle-label row-custom-hover" for="row-item_1">
+                  <i class="fa fa-plus text-suvagray"></i>
+                </label>
+                <input class="row-item_toggle d-none" type="checkbox" name="checkbox" id="row-item_1">
+                <div class=" row-popup row-popup-md-right row-popup-right d-none pos-abs bg-main-1">
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">Add to collection</p>
+                  </a>
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">Send a request</p>
+                  </a>
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">More details</p>
+                  </a>
+                </div>
+                <h3 class="helv-nb text-cabret row-text-large">20$</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row-item d-flex flex-c justify-c-end">
+            <img class="row-item__img w-100" src="./images/rows/row-1-2.png" alt="row 1 picture">
+            <div class="row-item__text bg-main-1">
+              <h4 class="text-eclipse helv-nl"> Javascript </h4>
+              <p class="text-cabret helv-nb">15 Hours</p>
+              <p class="text-eclipse helv-nl"><strong>By:</strong> Instructor</p>
+              <div class="d-flex justify-c-between pos-rel">
+                <label class="row-item_toggle-label row-custom-hover" for="row-item-2">
+                  <i class="fa fa-plus text-suvagray"></i>
+                </label>
+                <input class="row-item_toggle d-none" type="checkbox" name="checkbox" id="row-item-2">
+                <div class=" row-popup d-none pos-abs bg-main-1">
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">Add to collection</p>
+                  </a>
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">Send a request</p>
+                  </a>
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">More details</p>
+                  </a>
+                </div>
+                <h3 class="helv-nb text-cabret row-text-large">20$</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row-item d-flex flex-c ">
+            <img class="row-item__img w-100" src="./images/rows/row-1-3.png" alt="row 1 picture">
+            <div class="row-item__text bg-main-1">
+              <h4 class="text-eclipse helv-nl"> React</h4>
+              <p class="text-cabret helv-nb">15 Hours</p>
+              <p class="text-eclipse helv-nl"><strong>By:</strong> Instructor</p>
+              <div class="d-flex justify-c-between pos-rel">
+                <label class="row-item_toggle-label row-custom-hover" for="row-item3_3">
+                  <i class="fa fa-plus text-suvagray"></i>
+                </label>
+                <input class="row-item_toggle d-none" type="checkbox" name="checkbox" id="row-item3_3">
+                <div class=" row-popup row-popup-right d-none pos-abs bg-main-1">
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">Add to collection</p>
+                  </a>
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">Send a request</p>
+                  </a>
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">More details</p>
+                  </a>
+                </div>
+                <h3 class="helv-nb text-cabret row-text-large">20$</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row-item d-flex flex-c ">
+            <img class="row-item__img w-100" src="./images/rows/row-1-4.png" alt="row 1 picture">
+            <div class="row-item__text bg-main-1">
+              <h4 class="text-eclipse helv-nl"> Angular</h4>
+              <p class="text-cabret helv-nb">15 Hours</p>
+              <p class="text-eclipse helv-nl"><strong>By:</strong> Instructor</p>
+              <div class="d-flex justify-c-between pos-rel">
+                <label class="row-item_toggle-label row-custom-hover" for="row-item-4">
+                  <i class="fa fa-plus text-suvagray"></i>
+                </label>
+                <input class="row-item_toggle d-none" type="checkbox" name="checkbox" id="row-item-4">
+                <div class=" row-popup d-none pos-abs bg-main-1">
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">Add to collection</p>
+                  </a>
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">Send a request</p>
+                  </a>
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">More details</p>
+                  </a>
+                </div>
+                <h3 class="helv-nb text-cabret row-text-large">20$</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row-item d-flex flex-c ">
+            <img class="row-item__img w-100" src="./images/rows/row-1-5.png" alt="row 1 picture">
+            <div class="row-item__text bg-main-1">
+              <h4 class="text-eclipse helv-nl"> Vue</h4>
+              <p class="text-cabret helv-nb">15 Hours</p>
+              <p class="text-eclipse helv-nl"><strong>By:</strong> Instructor</p>
+              <div class="d-flex justify-c-between pos-rel">
+                <label class="row-item_toggle-label row-custom-hover" for="row-item_5">
+                  <i class="fa fa-plus text-suvagray"></i>
+                </label>
+                <input class="row-item_toggle d-none" type="checkbox" name="checkbox" id="row-item_5">
+                <div class=" row-popup row-popup-right d-none pos-abs bg-main-1">
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">Add to collection</p>
+                  </a>
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">Send a request</p>
+                  </a>
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">More details</p>
+                  </a>
+                </div>
+                <h3 class="helv-nb text-cabret row-text-large">20$</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row-item d-none d-sm-flex flex-c">
+            <img class="row-item__img w-100" src="./images/rows/row-1-1.png" alt="row 1 picture">
+            <div class="row-item__text bg-main-1">
+              <h4 class="text-eclipse helv-nl"> HTML5 and CSS3</h4>
+              <p class="text-cabret helv-nb">15 Hours</p>
+              <p class="text-eclipse helv-nl"><strong>By:</strong> Instructor</p>
+              <div class="d-flex justify-c-between pos-rel">
+                <label class="row-item_toggle-label row-custom-hover" for="row-item-6">
+                  <i class="fa fa-plus text-suvagray"></i>
+                </label>
+                <input class="row-item_toggle d-none" type="checkbox" name="checkbox" id="row-item-6">
+                <div class=" row-popup d-none pos-abs bg-main-1">
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">Add to collection</p>
+                  </a>
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">Send a request</p>
+                  </a>
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">More details</p>
+                  </a>
+                </div>
+                <h3 class="helv-nb text-cabret row-text-large">20$</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="row-chavron-right d-flex justify-c-center align-i-center">
+          <i class="fa fa-chevron-right  text-eclipse"></i>
+        </a>
+      </div>
+    </section>
+
+    <section class="main-row mx-auto">
+      <div class="row-title d-flex align-i-center ">
+        <i class="fa fa-2x fa-code text-suvagray" aria-hidden="true"></i>
+        <h3 class="text-eclipse helv-nl">Back End Web Development</h3>
+        <h4 class="text-suvagray gotm-rl">(HTML5, CSS3, Sass, Javascript, React, Vue)</h4>
+      </div>
+
+      <div class="row-item-container d-flex ">
+        <a href="#" class="row-chavron-left d-flex justify-c-start align-i-center">
+          <i class="fa fa-chevron-left text-eclipse"></i>
+        </a>
+        <div class="row-courses d-flex ">
+          <div class="row-item d-flex flex-c ">
+            <img class="row-item__img w-100" src="./images/rows/row-2-1.png" alt="row 1 picture">
+            <div class="row-item__text bg-main-1">
+              <h4 class="text-eclipse helv-nl"> PHP</h4>
+              <p class="text-cabret helv-nb">15 Hours</p>
+              <p class="text-eclipse helv-nl"><strong>By:</strong> Instructor</p>
+              <div class="d-flex justify-c-between pos-rel">
+                <label class="row-item_toggle-label row-custom-hover" for="row-item2_1">
+                  <i class="fa fa-plus text-suvagray"></i>
+                </label>
+                <input class="row-item_toggle d-none" type="checkbox" name="checkbox" id="row-item2_1">
+                <div class=" row-popup row-popup-md-right row-popup-right d-none pos-abs bg-main-1">
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">Add to collection</p>
+                  </a>
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">Send a request</p>
+                  </a>
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">More details</p>
+                  </a>
+                </div>
+                <h3 class="helv-nb text-cabret row-text-large">20$</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row-item d-flex flex-c justify-c-end">
+            <img class="row-item__img w-100" src="./images/rows/row-1-2.png" alt="row 1 picture">
+            <div class="row-item__text bg-main-1">
+              <h4 class="text-eclipse helv-nl"> Javascript </h4>
+              <p class="text-cabret helv-nb">15 Hours</p>
+              <p class="text-eclipse helv-nl"><strong>By:</strong> Instructor</p>
+              <div class="d-flex justify-c-between pos-rel">
+                <label class="row-item_toggle-label row-custom-hover" for="row-item2-2">
+                  <i class="fa fa-plus text-suvagray"></i>
+                </label>
+                <input class="row-item_toggle d-none" type="checkbox" name="checkbox" id="row-item2-2">
+                <div class=" row-popup d-none pos-abs bg-main-1">
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">Add to collection</p>
+                  </a>
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">Send a request</p>
+                  </a>
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">More details</p>
+                  </a>
+                </div>
+                <h3 class="helv-nb text-cabret row-text-large">20$</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row-item d-flex flex-c ">
+            <img class="row-item__img w-100" src="./images/rows/row-2-3.png" alt="row 1 picture">
+            <div class="row-item__text bg-main-1">
+              <h4 class="text-eclipse helv-nl"> Node Js</h4>
+              <p class="text-cabret helv-nb">15 Hours</p>
+              <p class="text-eclipse helv-nl"><strong>By:</strong> Instructor</p>
+              <div class="d-flex justify-c-between pos-rel">
+                <label class="row-item_toggle-label row-custom-hover" for="row-item_3">
+                  <i class="fa fa-plus text-suvagray"></i>
+                </label>
+                <input class="row-item_toggle d-none" type="checkbox" name="checkbox" id="row-item_3">
+                <div class=" row-popup row-popup-right d-none pos-abs bg-main-1">
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">Add to collection</p>
+                  </a>
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">Send a request</p>
+                  </a>
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">More details</p>
+                  </a>
+                </div>
+                <h3 class="helv-nb text-cabret row-text-large">20$</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row-item d-flex flex-c ">
+            <img class="row-item__img w-100" src="./images/rows/row-2-4.png" alt="row 1 picture">
+            <div class="row-item__text bg-main-1">
+              <h4 class="text-eclipse helv-nl"> Rails</h4>
+              <p class="text-cabret helv-nb">15 Hours</p>
+              <p class="text-eclipse helv-nl"><strong>By:</strong> Instructor</p>
+              <div class="d-flex justify-c-between pos-rel">
+                <label class="row-item_toggle-label row-custom-hover" for="row-item2-4">
+                  <i class="fa fa-plus text-suvagray"></i>
+                </label>
+                <input class="row-item_toggle d-none" type="checkbox" name="checkbox" id="row-item2-4">
+                <div class=" row-popup d-none pos-abs bg-main-1">
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">Add to collection</p>
+                  </a>
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">Send a request</p>
+                  </a>
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">More details</p>
+                  </a>
+                </div>
+                <h3 class="helv-nb text-cabret row-text-large">20$</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row-item d-flex flex-c ">
+            <img class="row-item__img w-100" src="./images/rows/row-2-5.png" alt="row 1 picture">
+            <div class="row-item__text bg-main-1">
+              <h4 class="text-eclipse helv-nl"> Java</h4>
+              <p class="text-cabret helv-nb">15 Hours</p>
+              <p class="text-eclipse helv-nl"><strong>By:</strong> Instructor</p>
+              <div class="d-flex justify-c-between pos-rel">
+                <label class="row-item_toggle-label row-custom-hover" for="row-item2_5">
+                  <i class="fa fa-plus text-suvagray"></i>
+                </label>
+                <input class="row-item_toggle d-none" type="checkbox" name="checkbox" id="row-item2_5">
+                <div class=" row-popup row-popup-right d-none pos-abs bg-main-1">
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">Add to collection</p>
+                  </a>
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">Send a request</p>
+                  </a>
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">More details</p>
+                  </a>
+                </div>
+                <h3 class="helv-nb text-cabret row-text-large">20$</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row-item d-none d-sm-flex flex-c">
+            <img class="row-item__img w-100" src="./images/rows/row-1-1.png" alt="row 1 picture">
+            <div class="row-item__text bg-main-1">
+              <h4 class="text-eclipse helv-nl"> HTML5 and CSS3</h4>
+              <p class="text-cabret helv-nb">15 Hours</p>
+              <p class="text-eclipse helv-nl"><strong>By:</strong> Instructor</p>
+              <div class="d-flex justify-c-between pos-rel">
+                <label class="row-item_toggle-label row-custom-hover" for="row-item2-6">
+                  <i class="fa fa-plus text-suvagray"></i>
+                </label>
+                <input class="row-item_toggle d-none" type="checkbox" name="checkbox" id="row-item2-6">
+                <div class=" row-popup d-none pos-abs bg-main-1">
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">Add to collection</p>
+                  </a>
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">Send a request</p>
+                  </a>
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">More details</p>
+                  </a>
+                </div>
+                <h3 class="helv-nb text-cabret row-text-large">20$</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="row-chavron-right d-flex justify-c-center align-i-center">
+          <i class="fa fa-chevron-right  text-eclipse"></i>
+        </a>
+      </div>
+    </section>
+
+    <section class="main-row mx-auto">
+      <div class="row-title d-flex align-i-center ">
+        <i class="fa fa-2x fa-database text-suvagray" aria-hidden="true"></i>
+        <h3 class="text-eclipse helv-nl">Database Development</h3>
+        <h4 class="text-suvagray gotm-rl">(HTML5, CSS3, Sass, Javascript, React, Vue)</h4>
+      </div>
+
+      <div class="row-item-container d-flex ">
+        <a href="#" class="row-chavron-left d-flex justify-c-start align-i-center">
+          <i class="fa fa-chevron-left text-eclipse"></i>
+        </a>
+        <div class="row-courses d-flex ">
+          <div class="row-item d-flex flex-c ">
+            <img class="row-item__img w-100" src="./images/rows/row-3-1.png" alt="row 1 picture">
+            <div class="row-item__text bg-main-1">
+              <h4 class="text-eclipse helv-nl"> My SQL</h4>
+              <p class="text-cabret helv-nb">15 Hours</p>
+              <p class="text-eclipse helv-nl"><strong>By:</strong> Instructor</p>
+              <div class="d-flex justify-c-between pos-rel">
+                <label class="row-item_toggle-label row-custom-hover" for="row-item3_1">
+                  <i class="fa fa-plus text-suvagray"></i>
+                </label>
+                <input class="row-item_toggle d-none" type="checkbox" name="checkbox" id="row-item3_1">
+                <div class=" row-popup row-popup-md-right row-popup-right d-none pos-abs bg-main-1">
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">Add to collection</p>
+                  </a>
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">Send a request</p>
+                  </a>
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">More details</p>
+                  </a>
+                </div>
+                <h3 class="helv-nb text-cabret row-text-large">20$</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row-item d-flex flex-c justify-c-end">
+            <img class="row-item__img w-100" src="./images/rows/row-3-2.png" alt="row 1 picture">
+            <div class="row-item__text bg-main-1">
+              <h4 class="text-eclipse helv-nl"> Mongodb </h4>
+              <p class="text-cabret helv-nb">15 Hours</p>
+              <p class="text-eclipse helv-nl"><strong>By:</strong> Instructor</p>
+              <div class="d-flex justify-c-between pos-rel">
+                <label class="row-item_toggle-label row-custom-hover" for="row-item3-2">
+                  <i class="fa fa-plus text-suvagray"></i>
+                </label>
+                <input class="row-item_toggle d-none" type="checkbox" name="checkbox" id="row-item3-2">
+                <div class=" row-popup d-none pos-abs bg-main-1">
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">Add to collection</p>
+                  </a>
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">Send a request</p>
+                  </a>
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">More details</p>
+                  </a>
+                </div>
+                <h3 class="helv-nb text-cabret row-text-large">20$</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row-item d-flex flex-c ">
+            <img class="row-item__img w-100" src="./images/rows/row-3-1.png" alt="row 1 picture">
+            <div class="row-item__text bg-main-1">
+              <h4 class="text-eclipse helv-nl"> MySQL</h4>
+              <p class="text-cabret helv-nb">15 Hours</p>
+              <p class="text-eclipse helv-nl"><strong>By:</strong> Instructor</p>
+              <div class="d-flex justify-c-between pos-rel">
+                <label class="row-item_toggle-label row-custom-hover" for="row-item2_3">
+                  <i class="fa fa-plus text-suvagray"></i>
+                </label>
+                <input class="row-item_toggle d-none" type="checkbox" name="checkbox" id="row-item2_3">
+                <div class=" row-popup row-popup-right d-none pos-abs bg-main-1">
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">Add to collection</p>
+                  </a>
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">Send a request</p>
+                  </a>
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">More details</p>
+                  </a>
+                </div>
+                <h3 class="helv-nb text-cabret row-text-large">20$</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row-item d-flex flex-c ">
+            <img class="row-item__img w-100" src="./images/rows/row-2-3.png" alt="row 1 picture">
+            <div class="row-item__text bg-main-1">
+              <h4 class="text-eclipse helv-nl"> Rails</h4>
+              <p class="text-cabret helv-nb">15 Hours</p>
+              <p class="text-eclipse helv-nl"><strong>By:</strong> Instructor</p>
+              <div class="d-flex justify-c-between pos-rel">
+                <label class="row-item_toggle-label row-custom-hover" for="row-item3-4">
+                  <i class="fa fa-plus text-suvagray"></i>
+                </label>
+                <input class="row-item_toggle d-none" type="checkbox" name="checkbox" id="row-item3-4">
+                <div class=" row-popup d-none pos-abs bg-main-1">
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">Add to collection</p>
+                  </a>
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">Send a request</p>
+                  </a>
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">More details</p>
+                  </a>
+                </div>
+                <h3 class="helv-nb text-cabret row-text-large">20$</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row-item d-flex flex-c ">
+            <img class="row-item__img w-100" src="./images/rows/row-1-5.png" alt="row 1 picture">
+            <div class="row-item__text bg-main-1">
+              <h4 class="text-eclipse helv-nl"> Vue</h4>
+              <p class="text-cabret helv-nb">15 Hours</p>
+              <p class="text-eclipse helv-nl"><strong>By:</strong> Instructor</p>
+              <div class="d-flex justify-c-between pos-rel">
+                <label class="row-item_toggle-label row-custom-hover" for="row-item3_5">
+                  <i class="fa fa-plus text-suvagray"></i>
+                </label>
+                <input class="row-item_toggle d-none" type="checkbox" name="checkbox" id="row-item3_5">
+                <div class=" row-popup row-popup-right d-none pos-abs bg-main-1">
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">Add to collection</p>
+                  </a>
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">Send a request</p>
+                  </a>
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">More details</p>
+                  </a>
+                </div>
+                <h3 class="helv-nb text-cabret row-text-large">20$</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row-item d-none d-sm-flex flex-c">
+            <img class="row-item__img w-100" src="./images/rows/row-1-1.png" alt="row 1 picture">
+            <div class="row-item__text bg-main-1">
+              <h4 class="text-eclipse helv-nl"> HTML5 and CSS3</h4>
+              <p class="text-cabret helv-nb">15 Hours</p>
+              <p class="text-eclipse helv-nl"><strong>By:</strong> Instructor</p>
+              <div class="d-flex justify-c-between pos-rel">
+                <label class="row-item_toggle-label row-custom-hover" for="row-item3-6">
+                  <i class="fa fa-plus text-suvagray"></i>
+                </label>
+                <input class="row-item_toggle d-none" type="checkbox" name="checkbox" id="row-item3-6">
+                <div class=" row-popup d-none pos-abs bg-main-1">
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">Add to collection</p>
+                  </a>
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">Send a request</p>
+                  </a>
+                  <a class="w-100 row-custom-hover" href="#">
+                    <p class="text-eclipse helv-nb">More details</p>
+                  </a>
+                </div>
+                <h3 class="helv-nb text-cabret row-text-large">20$</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="row-chavron-right d-flex justify-c-center align-i-center">
+          <i class="fa fa-chevron-right  text-eclipse"></i>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer w-100">
+    <div class="footer-container d-flex flex-c mx-auto ">
+      <div class="footer-main d-flex justify-c-between w-100">
+        <div class="footer-main__brand d-flex flex-c align-i-center ">
+          <div class="d-flex align-i-center align-s-center">
+            <img class="img-logo" src="./images/header/logo.png" alt="">
+            <h2 class="header__brand gotm-bold text-suvagray">CodeCart</h2>
+          </div>
+          <div class="helv-nm text-suvagray">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est similique
+            asperiores officiis a consequatur, temporibus eveniet doloremque sed mollitia porro laudantium
+            exercitationem aperiam laborum pariatur iure nisi facere cupiditate quis ipsam, molestiae libero modi.
+            Impedit necessitatibus voluptatem minima nisi facilis.</div>
+        </div>
+        <div class="footer-main__cat d-flex flex-c">
+          <h2 class="footer-list-header gotm-bold text-suvagray">Categories</h2>
+          <div class="d-flex w-100 helv-nm text-suvagray">
+            <ul class="w-50">
+              <li><a href="#">Javascript</a></li>
+              <li><a href="#">Java</a></li>
+              <li><a href="#">HTML</a></li>
+              <li><a href="#">CSS</a></li>
+              <li><a href="#">Ruby</a></li>
+              <li><a href="#">PHP</a></li>
+              <li><a href="#">Python</a></li>
+              <li><a href="#">C++</a></li>
+            </ul>
+            <ul class="w-150">
+              <li><a href="#">react</a></li>
+              <li><a href="#">angular</a></li>
+              <li><a href="#">Vue</a></li>
+              <li><a href="#">Laravel</a></li>
+              <li><a href="#">Rails</a></li>
+              <li><a href="#">Django</a></li>
+              <li><a href="#">WebAssembly</a></li>
+              <li><a href="#">other</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-main__nav">
+          <h2 class="footer-list-header gotm-bold text-suvagray">Navigation</h2>
+          <ul class="w-100 helv-nm text-suvagray ">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">List</a></li>
+            <li><a href="#">Catagory</a></li>
+            <li><a href="#">Purchase</a></li>
+            <li><a href="#">User</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-main__btns d-flex flex-c">
+          <div class="d-flex">
+            <label class="helv-nm text-suvagray" for="footer-drop-down-1">Country</label>
+            <select class="helv-nm text-suvagray" name="footer-drop-down-1" id="footer-drop-down-1">
+              <option value="1">Ethiopia</option>
+              <option value="2">Ertrea</option>
+              <option value="3">Kenya</option>
+              <option value="4">Nigeria</option>
+            </select>
+          </div>
+          <div class="d-flex">
+            <label class="helv-nm text-suvagray" for="footer-drop-down-2">Language</label>
+            <select class="helv-nm text-suvagray" name="footer-drop-down-2" id="footer-drop-down-2">
+              <option value="1">English</option>
+              <option value="2">Amharic</option>
+              <option value="3">other</option>
+            </select>
+          </div>
+          <div class="d-flex">
+            <label class="helv-nm text-suvagray" for="footer-drop-down-3">Currency</label>
+            <select class="helv-nm text-suvagray" name="footer-drop-down-3" id="footer-drop-down-3">
+              <option value="1">USD</option>
+              <option value="2">Birr</option>
+              <option value="3">Euro</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="footer-footer d-flex justify-c-between">
+        <div>
+          <h5 class="helv-nl text-suvagray">Copyright Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae ab
+            quis atque doloremque?</h5>
+        </div>
+        <div class="footer-icons d-flex text-suvagray w-25">
+          <ul class="d-flex w-100 justify-c-between">
+            <li><a class="text-muted" href="#"><i class="fa fa-2x fa-facebook-square"></i></a></li>
+            <li><a class="text-muted" href="#"><i class="fa fa-2x fa-twitter"></i></a></li>
+            <li><a class="text-muted" href="#"><i class="fa fa-2x fa-instagram"></i></a></li>
+            <li><a class="text-muted" href="#"><i class="fa fa-2x fa-tumblr"></i></a></li>
+            <li><a class="text-muted" href="#"><i class="fa fa-2x fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    window.onresize = function () {
+      document.getElementById("toggle").checked = false;
+    };
+  </script>
+</body>
+
+</html>

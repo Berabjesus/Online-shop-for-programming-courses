@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Search</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="header__nav bg-eclipse d-flex justify-c-center w-100 ">
+      <div class="header__nav__container pos-rel d-flex justify-c-start ">
+        <div class="header__logo d-flex align-i-center ">
+          <img class="img-logo" src="./images/header/logo.png" alt="">
+          <h2 class="header__brand gotm-rl text-white">CodeCart</h2>
+        </div>
+        <ul class="header__links_ul d-flex  w-40 align-i-center justify-c-evenly">
+          <li class="hover-custom">
+            <a class="helv-nl text-cabret" href="./index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+          </li>
+          <li class="hover-custom">
+            <a class="helv-nl text-suvagray" href="#"><i class="fa fa-th-list" aria-hidden="true"></i>Catagory</a>
+          </li>
+          <li class="hover-custom">
+            <a class="helv-nl text-suvagray" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Purchase
+              List</a>
+          </li>
+        </ul>
+        <div class="header__buttons d-flex align-i-center w-60 ">
+          <div class="pos-rel d-flex justify-c-between align-i-center w-100">
+            <label for="toggle" class="header__toggle pos-abs d-xl-none  flex-c">
+              <span class="bg-suvagray"></span>
+              <span class="bg-suvagray"></span>
+              <span class="bg-suvagray"></span>
+            </label>
+            <input class="d-none" type="checkbox" name="toggle" id="toggle">
+            <div class="header__buttons__container d-flex justify-c-between align-i-center">
+              <a href="" class="post-ad-btn btn-custom bg-cabret text-white helv-nm">POST AN AD</a>
+              <div class="header__user d-flex align-i-center">
+                <div class="header__user__msg pos-rel d-flex">
+                  <a href="#">
+                    <i class="fa fa-envelope text-suvagray"></i>
+                    <p class="badge pos-abs bg-cabret text-white helv-nb round text-center">2</p>
+                  </a>
+                </div>
+                <a href="#">
+                  <p class="header_user-name helv-nb text-white">Mr. somebody</p>
+                </a>
+                <a href="#">
+                  <img class="header__user__avatar round bg-cabret" src="./images/header/user.png" alt="user image">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="header__content w-100 bg-cabret pt-5 pb-3 mt-0">
+      <div class="header__content__container pos-rel h-100 mx-auto mt-1 d-flex flex-column justify-content-start">
+        <div class="header__content__text mb-2">
+          <h1 class="helv-nl text-white py-0">CodeCart</h1>
+          <h5 class="text-white gotm-rl">Around 5000 tutorials in our database.</h5>
+        </div>
+        <form class="header__content__form d-flex justify-c-start mx-0 mx-sm-auto w-100" action="#" id="courseForm">
+          <select class="form__selector helv-nl text-cabret mx-0" name="select" id="select" form="courseForm">
+            <option value="0">All Courses</option>
+            <option value="1">Web Development Courses</option>
+            <option value="2">Mobile App Development Courses</option>
+            <option value="3">Game Development Courses</option>
+            <option value="4">Database Design Courses</option>
+          </select>
+          <input class="form__inputs helv-nl text-cabret mx-0" type="text" name="search1" id="search1"
+            placeholder="What are you looking for?">
+          <input class="form__inputs helv-nl text-cabret mx-0" type="text" name="search" id="search"
+            placeholder="Search for an Instructor">
+          <button class="form__button bg-eclipse text-suvagray helv-nm" type="submit">Search</button>
+
+        </form>
+      </div>
+    </section>
+  </header>
+
+  <main class="contianer-fluid bg-rows">
+    <div class="search-container d-flex flex-column flex-lg-row w-100">
+      <button type="button" class="d-block d-sm-none bg-eclipse text-suvagray helv-nm w-50 mx-auto mt-2 py-2" data-toggle="collapse" data-target="#filter">Filter search</button>
+
+      <aside id="filter" class="collapse search-filter col-12 col-lg-2 col-xl-3 mt-3 mt-md-0 pt-1 pt-lg-4 pl-sm-0 pl-xl-5 border-right border-secondary d-sm-flex flex-column flex-lg-column flex-md-row justify-content-around justify-content-lg-start">
+        <div class="form-check pt-3">
+          <div class="form-check-inline">
+            <label class="form-check-label helv-nm text-suvagray">
+              <input type="checkbox" class="form-check-input custom-checkbox" value="1">Free
+            </label>
+          </div>
+          <div class="form-check-inline">
+            <label class="form-check-label helv-nm text-suvagray">
+              <input type="checkbox" class="form-check-input custom-checkbox" value="1">Paid
+            </label>
+          </div>
+        </div>
+        <div class="form-check mt-0 mt-lg-3">
+          <div class="border-bottom border-secondary pb-1">
+            <h5 class="helv-nb text-eclipse">Type</h5>
+          </div>
+          <div class="d-flex flex-column flex-sm-row flex-md-column mt-2">
+            <div class="form-check-inline mb-1">
+              <label class="form-check-label helv-nm text-suvagray">
+                <input type="checkbox" class="form-check-input 
+                custom-checkbox" value="1">Front End
+              </label>
+            </div>
+            <div class="form-check-inline mb-1">
+              <label class="form-check-label helv-nm text-suvagray">
+                <input type="checkbox" class="form-check-input custom-checkbox" value="1">Back End
+              </label>
+            </div>
+            <div class="form-check-inline mb-1">
+              <label class="form-check-label helv-nm text-suvagray">
+                <input type="checkbox" class="form-check-input custom-checkbox" value="1">Data Structures
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-check mt-0 mt-lg-3-0 mt-lg-3">
+          <div class="border-bottom border-secondary  pb-1">
+            <h5 class="helv-nb text-eclipse">Hours</h5>
+          </div>
+          <div class="d-flex flex-column flex-sm-row  flex-md-column mt-2">
+            <div class="form-check-inline mb-1">
+              <label class="form-check-label helv-nm text-suvagray">
+                <input type="checkbox" class="form-check-input 
+                custom-checkbox" value="1">&lt; 10 Hours </label> </div> <div class="form-check-inline mb-1">
+                  <label class="form-check-label helv-nm text-suvagray">
+                    <input type="checkbox" class="form-check-input custom-checkbox" value="1">10 - 20 Hrs
+                  </label>
+            </div>
+            <div class="form-check-inline mb-1 d-flex flex-row flex-lg-column flex-xl-row align-self-start">
+              <label class="form-check-label helv-nm text-suvagray">
+                <input type="checkbox" class="form-check-input custom-checkbox" value="1">Custom
+              </label>
+              <input class="ml-3 custom-input" type="number" name="number" id="number">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-check mt-0 mt-lg-3">
+          <div class="border-bottom border-secondary  pb-1">
+            <h5 class="helv-nb text-eclipse">Price Range</h5>
+          </div>
+          <div class="d-flex flex-column flex-sm-row  flex-md-column mt-2">
+            <div class="form-check-inline mb-1">
+              <label class="form-check-label helv-nm text-suvagray">
+                <input type="checkbox" class="form-check-input 
+                custom-checkbox" value="1">
+                &lt; 20$ </label> </div> <div class="form-check-inline mb-1">
+                  <label class="form-check-label helv-nm text-suvagray">
+                    <input type="checkbox" class="form-check-input custom-checkbox" value="1">21$ - 40$
+                  </label>
+            </div>
+            <div class="form-check-inline mb-1">
+              <label class="form-check-label helv-nm text-suvagray d-flex">
+                <input type="checkbox" class="form-check-input custom-checkbox" value="1">41$ - 100%
+              </label>
+            </div>
+            <div class="form-check-inline mb-1">
+              <label class="form-check-label helv-nm text-suvagray d-flex">
+                <input type="checkbox" class="form-check-input custom-checkbox" value="1">> 100%
+              </label>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <section class="search-results col-lg-10 col-xl-9 pt-3 pl-0 pr-0 pr-md-2">
+        <div>
+          <h6 class="pb-3 pl-2 border-bottom border-secondary">340 search results for <strong>All courses</strong> search by
+            <strong>anyone</strong>.</h6>
+        </div>
+        <div class="search-items d-flex py-4 pl-2 w-100 border-bottom border-secondary flex-column flex-md-row align-items-center align-items-md-stretch search-hover">
+          <div class="col-10 col-md-4 col-xl-3 px-0 pos-rel d-flex">
+            <img class="w-100 h-100 align-self-start" src="./images/rows/row-1-2.png" alt="">
+            <div class="img-toggle pos-abs d-flex justify-c-between bg-eclipse text-center">
+              <a href="#">
+                <i class="fa fa-chevron-left text-cabret"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-chevron-right text-cabret"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-10 col-md-8 col-xl-9 d-flex flex-column justify-content-around pl-0 pl-md-3 pr-0 pr-md-3">
+            <h5 class="helv-nb text-eclipse">Javascript Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, maxime.</h5>
+            <p class="text-cabret helv-nm">20hours</p>
+            <p class="helv-nm text-suvagray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt obcaecati sint maiores delectus fugiat commodi doloribus voluptatibus ut, sequi doloremque.</p>
+            <h6 class="helv-nm text-eclipse"><strong>Duration: </strong>Lorem ipsum dolor sit amet consectetur.</h6>
+            <div class="d-flex justify-c-between flex-column flex-md-row">
+              <p class="helv-nm text-eclipse">24 Nov 2020</p>
+              <button  class="call-btn  btn-custom bg-cabret text-white helv-nm px-4 w-25">Give a Call</button>
+              <button class="post-ad-btn btn-custom bg-cabret text-white helv-nm px-4 w-25">80$</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="search-items d-flex py-4 pl-2 w-100 border-bottom border-secondary flex-column flex-md-row align-items-center align-items-md-stretch search-hover">
+          <div class="col-10 col-md-4 col-xl-3 px-0 pos-rel d-flex">
+            <img class="w-100 h-100 align-self-start" src="./images/rows/row-2-5.png" alt="">
+            <div class="img-toggle pos-abs d-flex justify-c-between bg-eclipse text-center">
+              <a href="#">
+                <i class="fa fa-chevron-left text-cabret"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-chevron-right text-cabret"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-10 col-md-8 col-xl-9 d-flex flex-column justify-content-around pl-0 pl-md-3 pr-0 pr-md-3">
+            <h5 class="helv-nb text-eclipse">Javascript Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, maxime.</h5>
+            <p class="text-cabret helv-nm">20hours</p>
+            <p class="helv-nm text-suvagray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt obcaecati sint maiores delectus fugiat commodi doloribus voluptatibus ut, sequi doloremque.</p>
+            <h6 class="helv-nm text-eclipse"><strong>Duration: </strong>Lorem ipsum dolor sit amet consectetur.</h6>
+            <div class="d-flex justify-c-between flex-column flex-md-row">
+              <p class="helv-nm text-eclipse">24 Nov 2020</p>
+              <button  class="call-btn  btn-custom bg-cabret text-white helv-nm px-4 w-25">Give a Call</button>
+              <button class="post-ad-btn btn-custom bg-cabret text-white helv-nm px-4 w-25">80$</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="search-items d-flex py-4 pl-2 w-100 border-bottom border-secondary flex-column flex-md-row align-items-center align-items-md-stretch search-hover">
+          <div class="col-10 col-md-4 col-xl-3 px-0 pos-rel d-flex">
+            <img class="w-100 h-100 align-self-start" src="./images/rows/row-2-1.png" alt="">
+            <div class="img-toggle pos-abs d-flex justify-c-between bg-eclipse text-center">
+              <a href="#">
+                <i class="fa fa-chevron-left text-cabret"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-chevron-right text-cabret"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-10 col-md-8 col-xl-9 d-flex flex-column justify-content-around pl-0 pl-md-3 pr-0 pr-md-3">
+            <h5 class="helv-nb text-eclipse">Javascript Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, maxime.</h5>
+            <p class="text-cabret helv-nm">20hours</p>
+            <p class="helv-nm text-suvagray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt obcaecati sint maiores delectus fugiat commodi doloribus voluptatibus ut, sequi doloremque.</p>
+            <h6 class="helv-nm text-eclipse"><strong>Duration: </strong>Lorem ipsum dolor sit amet consectetur.</h6>
+            <div class="d-flex justify-c-between flex-column flex-md-row">
+              <p class="helv-nm text-eclipse">24 Nov 2020</p>
+              <button  class="call-btn  btn-custom bg-cabret text-white helv-nm px-4 w-25">Give a Call</button>
+              <button class="post-ad-btn btn-custom bg-cabret text-white helv-nm px-4 w-25">80$</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="search-items d-flex py-4 pl-2 w-100 border-bottom border-secondary flex-column flex-md-row align-items-center align-items-md-stretch search-hover">
+          <div class="col-10 col-md-4 col-xl-3 px-0 pos-rel d-flex">
+            <img class="w-100 h-100 align-self-start" src="./images/rows/row-1-4.png" alt="">
+            <div class="img-toggle pos-abs d-flex justify-c-between bg-eclipse text-center">
+              <a href="#">
+                <i class="fa fa-chevron-left text-cabret"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-chevron-right text-cabret"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-10 col-md-8 col-xl-9 d-flex flex-column justify-content-around pl-0 pl-md-3 pr-0 pr-md-3">
+            <h5 class="helv-nb text-eclipse">Javascript Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, maxime.</h5>
+            <p class="text-cabret helv-nm">20hours</p>
+            <p class="helv-nm text-suvagray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt obcaecati sint maiores delectus fugiat commodi doloribus voluptatibus ut, sequi doloremque.</p>
+            <h6 class="helv-nm text-eclipse"><strong>Duration: </strong>Lorem ipsum dolor sit amet consectetur.</h6>
+            <div class="d-flex justify-c-between flex-column flex-md-row">
+              <p class="helv-nm text-eclipse">24 Nov 2020</p>
+              <button  class="call-btn  btn-custom bg-cabret text-white helv-nm px-4 w-25">Give a Call</button>
+              <button class="post-ad-btn btn-custom bg-cabret text-white helv-nm px-4 w-25">80$</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="search-items d-flex py-4 pl-2 w-100 border-bottom border-secondary flex-column flex-md-row align-items-center align-items-md-stretch search-hover">
+          <div class="col-10 col-md-4 col-xl-3 px-0 pos-rel d-flex">
+            <img class="w-100 h-100 align-self-start" src="./images/rows/row-1-5.png" alt="">
+            <div class="img-toggle pos-abs d-flex justify-c-between bg-eclipse text-center">
+              <a href="#">
+                <i class="fa fa-chevron-left text-cabret"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-chevron-right text-cabret"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-10 col-md-8 col-xl-9 d-flex flex-column justify-content-around pl-0 pl-md-3 pr-0 pr-md-3">
+            <h5 class="helv-nb text-eclipse">Javascript Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, maxime.</h5>
+            <p class="text-cabret helv-nm">20hours</p>
+            <p class="helv-nm text-suvagray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt obcaecati sint maiores delectus fugiat commodi doloribus voluptatibus ut, sequi doloremque.</p>
+            <h6 class="helv-nm text-eclipse"><strong>Duration: </strong>Lorem ipsum dolor sit amet consectetur.</h6>
+            <div class="d-flex justify-c-between flex-column flex-md-row">
+              <p class="helv-nm text-eclipse">24 Nov 2020</p>
+              <button class="call-btn btn-custom bg-cabret text-white helv-nm px-4 w-25">Give a Call</button>
+              <button class="post-ad-btn btn-custom bg-cabret text-white helv-nm px-4 w-25">80$</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="search-items d-flex py-4 pl-2 w-100 border-bottom border-secondary flex-column flex-md-row align-items-center align-items-md-stretch search-hover">
+          <div class="col-10 col-md-4 col-xl-3 px-0 pos-rel d-flex">
+            <img class="w-100 h-100 align-self-start" src="./images/rows/row-1-2.png" alt="">
+            <div class="img-toggle pos-abs d-flex justify-c-between bg-eclipse text-center">
+              <a href="#">
+                <i class="fa fa-chevron-left text-cabret"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-chevron-right text-cabret"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-10 col-md-8 col-xl-9 d-flex flex-column justify-content-around pl-0 pl-md-3 pr-0 pr-md-3">
+            <h5 class="helv-nb text-eclipse">Javascript Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, maxime.</h5>
+            <p class="text-cabret helv-nm">20hours</p>
+            <p class="helv-nm text-suvagray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt obcaecati sint maiores delectus fugiat commodi doloribus voluptatibus ut, sequi doloremque.</p>
+            <h6 class="helv-nm text-eclipse"><strong>Duration: </strong>Lorem ipsum dolor sit amet consectetur.</h6>
+            <div class="d-flex justify-c-between flex-column flex-md-row">
+              <p class="helv-nm text-eclipse">24 Nov 2020</p>
+              <button  class="call-btn  btn-custom bg-cabret text-white helv-nm px-4 w-25">Give a Call</button>
+              <button class="post-ad-btn btn-custom bg-cabret text-white helv-nm px-4 w-25">80$</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <div class="my-4 d-none d-sm-block">
+    <ul class="pagination d-flex justify-content-center">
+      <li class="page-item"><a class="page-link mx-2 border-secondary" href="#">Previous</a></li>
+      <li class="page-item"><a class="page-link mx-2 border-secondary" href="#">1</a></li>
+      <li class="page-item"><a class="page-link mx-2 border-secondary" href="#">2</a></li>
+      <li class="page-item"><a class="page-link mx-2 border-secondary" href="#">3</a></li>
+      <li class="page-item"><a class="page-link mx-2 border-secondary" href="#">Next</a></li>
+    </ul>
+  </div>
+
+  <footer class="footer w-100">
+    <div class="footer-container d-flex flex-c mx-auto ">
+      <div class="footer-main d-flex justify-c-between w-100">
+        <div class="footer-main__brand d-flex flex-c align-i-center ">
+          <div class="d-flex align-i-center align-s-center">
+            <img class="img-logo" src="./images/header/logo.png" alt="">
+            <h4 class="header__brand gotm-bold text-suvagray">CodeCart</h4>
+          </div>
+          <div class="helv-nm text-suvagray">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est similique
+            asperiores officiis a consequatur, temporibus eveniet doloremque sed mollitia porro laudantium
+            exercitationem aperiam laborum pariatur iure nisi facere cupiditate quis ipsam, molestiae libero modi.
+            Impedit necessitatibus voluptatem minima nisi facilis.</div>
+        </div>
+        <div class="footer-main__cat d-flex flex-c">
+          <h4 class="footer-list-header gotm-bold text-suvagray">Catagories</h4>
+          <div class="d-flex w-100 helv-nm text-suvagray">
+            <ul class="w-50">
+              <li><a href="#">Javascript</a></li>
+              <li><a href="#">Java</a></li>
+              <li><a href="#">HTML</a></li>
+              <li><a href="#">CSS</a></li>
+              <li><a href="#">Ruby</a></li>
+              <li><a href="#">PHP</a></li>
+              <li><a href="#">Python</a></li>
+              <li><a href="#">C++</a></li>
+            </ul>
+            <ul class="w-150">
+              <li><a href="#">react</a></li>
+              <li><a href="#">angular</a></li>
+              <li><a href="#">Vue</a></li>
+              <li><a href="#">Laravel</a></li>
+              <li><a href="#">Rails</a></li>
+              <li><a href="#">Django</a></li>
+              <li><a href="#">WebAssembly</a></li>
+              <li><a href="#">other</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-main__nav">
+          <h4 class="footer-list-header gotm-bold text-suvagray">Navigation</h4>
+          <ul class="w-100 helv-nm text-suvagray ">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">List</a></li>
+            <li><a href="#">Catagory</a></li>
+            <li><a href="#">Purchase</a></li>
+            <li><a href="#">User</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-main__btns d-flex flex-c ">
+          <div class="d-flex">
+            <label class="helv-nm text-suvagray" for="footer-drop-down-1">Country</label>
+            <select class="helv-nm text-suvagray" name="footer-drop-down-1" id="footer-drop-down-1">
+              <option value="1">Ethiopia</option>
+              <option value="2">Ertrea</option>
+              <option value="3">Kenya</option>
+              <option value="4">Nigeria</option>
+            </select>
+          </div>
+          <div class="d-flex">
+            <label class="helv-nm text-suvagray" for="footer-drop-down-1">Language</label>
+            <select class="helv-nm text-suvagray" name="footer-drop-down-2" id="footer-drop-down-2">
+              <option value="1">English</option>
+              <option value="2">Amharic</option>
+              <option value="3">other</option>
+            </select>
+          </div>
+          <div class="d-flex">
+            <label class="helv-nm text-suvagray" for="footer-drop-down-1">Currency</label>
+            <select class="helv-nm text-suvagray" name="footer-drop-down-3" id="footer-drop-down-3">
+              <option value="1">USD</option>
+              <option value="2">Birr</option>
+              <option value="3">Euro</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="footer-footer d-flex justify-c-between">
+        <div>
+          <h5 class="helv-nl text-suvagray">Copyright Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae ab
+            quis atque doloremque?</h5>
+        </div>
+        <div class="footer-icons d-flex text-suvagray w-25">
+          <ul class="d-flex w-100 justify-c-between">
+            <li class="mr-4 mr-md-1"><a class="text-muted" href="#"><i class="fa fa-2x fa-facebook-square"></i></a></li>
+            <li class="mr-4 mr-md-1"><a class="text-muted" href="#"><i class="fa fa-2x fa-twitter"></i></a></li>
+            <li class="mr-4 mr-md-1"><a class="text-muted" href="#"><i class="fa fa-2x fa-instagram"></i></a></li>
+            <li class="mr-4 mr-md-1"><a class="text-muted" href="#"><i class="fa fa-2x fa-tumblr"></i></a></li>
+            <li class="mr-4 mr-md-1"><a class="text-muted" href="#"><i class="fa fa-2x fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
