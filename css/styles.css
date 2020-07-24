@@ -279,6 +279,10 @@
   width: 20px;
 }
 
+.header__buttons__container {
+  width: 100%;
+}
+
 .badge {
   top: -4px;
   right: 10px;
@@ -369,7 +373,7 @@
     position: absolute;
     z-index: 200;
     padding: 0.5rem 1rem;
-    top: 46px;
+    top: 50px;
     right: -7.2vw;
     background-color: var(--eclipse);
     transform: scale(1, 0);
