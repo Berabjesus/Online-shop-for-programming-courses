@@ -280,7 +280,7 @@
 }
 
 .header__buttons__container {
-  width: 100%;
+  width: 95%;
 }
 
 .badge {
@@ -676,9 +676,13 @@
   margin: 0 1.5rem 0 0;
 }
 
+.row-chavron-left,
+.row-chavron-right {
+  font-size: 25px;
+}
+
 .row-chavron-left {
   box-shadow: 10px 0 10px -9px var(--suvagray);
-  font-size: 25px;
 }
 
 .row-chavron-left i {
@@ -687,7 +691,6 @@
 
 .row-chavron-right {
   box-shadow: -10px 0 10px -9px var(--suvagray);
-  font-size: 25px;
 }
 
 .row-chavron-right i {
