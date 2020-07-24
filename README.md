@@ -11,19 +11,47 @@ This capstone project is a webpage that displays online programming course mater
 
 ## Small Size of Main page
 
-![screenshot](images/screen/sm.png)
+![screenshot](images/screen/small.png)
 
 This project is the Final project of the HTML/CSS curriculum under Microverse. 
 
 ## Built With
 
-- HTML5, CSS3 (Home Page)
-- BootStrap 4 (search results page)
-- Javascript
+- HTML/CSS
+- CSS 
+- Bootstrap (for the search page only)
+- fontawesome
+- npm
+- Adobe PS (for logo)
+- Stylelint, Webhint, Lighthouse
+- VSCode (with Prettier, Stylelint)
+- Google Chrome (with DevTools)
 
 ## Live Demo
 
-[Check it out](https://rawcdn.githack.com/Berabjesus/Online-shop-for-programming-courses/f03f4861c4e96fd45e85eb2815bab024f310a211/index.html)
+[Check the project out at](https://rawcdn.githack.com/Berabjesus/Online-shop-for-programming-courses/f03f4861c4e96fd45e85eb2815bab024f310a211/index.html)
+
+## Getting Started
+
+**To get this project set up on your local machine, follow these simple steps:**
+
+1. Open Terminal.
+
+2. Navigate to your desired location to download the contents of this repository.
+
+3. Copy and paste the following code into the Terminal:
+
+git clone https://github.com/Berabjesus/Online-shop-for-programming-courses.git
+
+4. Hit enter.
+
+5. Once the repository has been cloned, open index.html in a browser of your choosing. Click on the search button to navigate to the search results page or you can open the search.html file.
+
+### Prerequisites
+
+- A computer, a smartphone, or another similar device.
+- Access to the internet.
+
 ## Authors
 
 👤 **Bereket Beshane**

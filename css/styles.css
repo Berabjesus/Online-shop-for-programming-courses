@@ -233,10 +233,6 @@
   transition: all 0.1s linear;
 }
 
-.hover-custom:hover a{
-  color: var(--suvagray);
-}
-
 .img-border {
   border: 1px solid whitesmoke;
 }
