@@ -29,7 +29,7 @@ This project is the Final project of the HTML/CSS curriculum under Microverse.
 
 ## Live Demo
 
-[Check the project out here](https://rawcdn.githack.com/Berabjesus/Online-shop-for-programming-courses/adaae55d064fbb809e08c8bf9cd573222ccb4e59/index.html)
+[Check the project out here](https://rawcdn.githack.com/Berabjesus/Online-shop-for-programming-courses/23703264ba8c9417d8fa14cf99738ca2c48c0e9f/index.html)
 
 ## Getting Started
 
