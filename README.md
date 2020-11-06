@@ -1,6 +1,10 @@
 # Online Shop for programming Courses
 This capstone project is a webpage that displays online programming course materials that are available for free or for purchase.
 
+## Live Demo
+
+[Check the project out here](https://rawcdn.githack.com/Berabjesus/Online-shop-for-programming-courses/23703264ba8c9417d8fa14cf99738ca2c48c0e9f/index.html)
+
 ## Large Size of Main Page
 
 ![screenshot](images/screen/main.png)
@@ -26,10 +30,6 @@ This project is the Final project of the HTML/CSS curriculum under Microverse.
 - Stylelint, Webhint, Lighthouse
 - VSCode (with Prettier, Stylelint)
 - Google Chrome (with DevTools)
-
-## Live Demo
-
-[Check the project out here](https://rawcdn.githack.com/Berabjesus/Online-shop-for-programming-courses/23703264ba8c9417d8fa14cf99738ca2c48c0e9f/index.html)
 
 ## Getting Started
 
